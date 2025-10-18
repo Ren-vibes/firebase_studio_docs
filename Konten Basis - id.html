@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Content Base Details</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#5AB9B6",
+            "secondary": "#A3D4C9",
+            "accent": "#F6B26B",
+            "background-light": "#FAFAFA",
+            "background-dark": "#1E1E1E",
+            "text-light": "#1E1E1E",
+            "text-dark": "#FAFAFA"
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.75rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+          boxShadow: {
+            '2dp': '0 2px 4px rgba(0,0,0,0.1)',
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Top App Bar -->
+<div class="flex items-center p-4 pb-2 justify-between sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm z-10">
+<div class="flex size-12 shrink-0 items-center">
+<span class="material-symbols-outlined text-text-light dark:text-text-dark">arrow_back</span>
+</div>
+<h2 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Promosi Musim Panas</h2>
+<div class="flex w-12 items-center justify-end">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 bg-transparent text-text-light dark:text-text-dark gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+<span class="material-symbols-outlined text-text-light dark:text-text-dark">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Tabs -->
+<div class="sticky top-[72px] bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm z-10">
+<div class="flex border-b border-gray-200 dark:border-gray-700 px-4 justify-between">
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-primary text-primary pb-[13px] pt-4 flex-1" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">Ikhtisar</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-gray-500 dark:text-gray-400 pb-[13px] pt-4 flex-1" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">Aset</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-gray-500 dark:text-gray-400 pb-[13px] pt-4 flex-1" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">Preferensi</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-gray-500 dark:text-gray-400 pb-[13px] pt-4 flex-1" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">Riwayat</p>
+</a>
+</div>
+</div>
+<!-- Main Content -->
+<main class="flex-1 pb-28 px-4 pt-6">
+<div class="space-y-6">
+<!-- Summary Section -->
+<div class="bg-white dark:bg-gray-800 rounded-xl shadow-2dp p-6">
+<h3 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight tracking-[-0.015em] pb-2">Ringkasan</h3>
+<p class="text-text-light dark:text-text-dark/80 text-base font-normal leading-normal">
+            Basis konten ini dirancang untuk menghasilkan postingan promosi yang menarik selama musim panas, menargetkan audiens muda yang aktif di media sosial.
+          </p>
+</div>
+<!-- Stats Section -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="flex flex-col gap-2 rounded-xl p-6 bg-white dark:bg-gray-800 shadow-2dp">
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Postingan Dibuat</p>
+<p class="text-text-light dark:text-text-dark tracking-light text-3xl font-bold leading-tight">12</p>
+</div>
+<div class="flex flex-col gap-2 rounded-xl p-6 bg-white dark:bg-gray-800 shadow-2dp">
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Performa Terakhir</p>
+<p class="text-primary tracking-light text-3xl font-bold leading-tight">+5.2%</p>
+</div>
+</div>
+<!-- Preview Section -->
+<div class="bg-white dark:bg-gray-800 rounded-xl shadow-2dp p-6">
+<h3 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight tracking-[-0.015em] pb-4">Pratinjau Aset</h3>
+<div class="flex space-x-4 overflow-x-auto pb-2">
+<div class="flex-shrink-0 w-24 h-24 bg-secondary dark:bg-secondary/50 rounded-lg bg-cover bg-center" data-alt="Summer beach party photo" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAUO7q5k4j3GeGmSFyfKf_9gCxWQalsRUStQ0ml_hL8MdNGsrJskU6h8Kq5ummVQ3R8ObU-dS5YT0y1ZSvfOP0Ah_dNnrvG4wZMm3k3-qSXLECwAQ8LCbp8BOc_5jR7fePNsn9CVAnOrDOsuOhi_FwmEOp6CiaLm-plwB7sbwfrMt7bP_0rdXhucZj7An3_zrm70tT00WxRabLArn25H7p54aBbKqAmyHCiuXNKyD7qToM23ouXltx9MLnM4IIidEQuyNJ1GRi6fhql')"></div>
+<div class="flex-shrink-0 w-24 h-24 bg-secondary dark:bg-secondary/50 rounded-lg bg-cover bg-center" data-alt="Person enjoying an ice cream cone" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCZpIlYptgamgXCvQDucQeY2bo9IAM9heq-ybLNLL6fgDj9f7TVA-ZkAoIn99VnaZqtxUXRVk8B6aM-Wba-t38iHuYrgV9vXXYX6Zx1-zS2jaH03o2-IJuN9L1odRbjH7s9wbybVzBcbECeV3sIR8boPMoh5dPWbnURcWw2dAqvxTWqw19SiOxFdwqVzPg69zSDfKPPbzlfDLwWzmN1SR5guDQzKwedvfY8JctDJmFrKjqJC8T6TqOt4ezxgWHlnh4IjBDffjfsvJ0L')"></div>
+<div class="flex-shrink-0 w-24 h-24 bg-secondary dark:bg-secondary/50 rounded-lg flex items-center justify-center">
+<span class="text-primary font-bold">+3</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Floating Action Button -->
+<div class="fixed bottom-24 right-4 z-20 sm:bottom-8 sm:right-8">
+<button class="flex items-center justify-center gap-2 h-14 w-auto px-6 bg-accent text-white font-bold rounded-full shadow-lg hover:bg-accent/90 transition-colors">
+<span class="material-symbols-outlined">add</span>
+        Tambah Postingan
+      </button>
+</div>
+<!-- Bottom Navigation Bar -->
+<div class="fixed bottom-0 left-0 right-0 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border-t border-gray-200 dark:border-gray-700 z-30">
+<div class="flex justify-around h-16">
+<a class="flex flex-col items-center justify-center text-gray-500 dark:text-gray-400 w-full" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs">Beranda</span>
+</a>
+<a class="flex flex-col items-center justify-center text-primary w-full" href="#">
+<span class="material-symbols-outlined">photo_library</span>
+<span class="text-xs font-bold">Perpustakaan</span>
+</a>
+<a class="flex flex-col items-center justify-center text-gray-500 dark:text-gray-400 w-full" href="#">
+<span class="material-symbols-outlined">schedule</span>
+<span class="text-xs">Jadwal</span>
+</a>
+<a class="flex flex-col items-center justify-center text-gray-500 dark:text-gray-400 w-full" href="#">
+<span class="material-symbols-outlined">add_circle</span>
+<span class="text-xs">Buat</span>
+</a>
+<a class="flex flex-col items-center justify-center text-gray-500 dark:text-gray-400 w-full" href="#">
+<span class="material-symbols-outlined">account_circle</span>
+<span class="text-xs">Akun</span>
+</a>
+</div>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lengkapi Detail Basis Konten</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#5AB9B6",
+            "secondary": "#A3D4C9",
+            "accent": "#F6B26B",
+            "background-light": "#FAFAFA",
+            "background-dark": "#1E1E1E",
+            "text-light": "#1E1E1E",
+            "text-dark": "#FAFAFA",
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.75rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+          boxShadow: {
+            '2dp': '0 2px 4px 0 rgba(0, 0, 0, 0.1)',
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col">
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center p-4 pb-2 justify-between">
+<button class="flex size-10 items-center justify-center rounded-full text-text-light dark:text-text-dark">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+<h1 class="text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Lengkapi Detail Basis Konten</h1>
+<div class="w-10"></div>
+</div>
+<div class="px-4 pt-2 pb-4">
+<div class="relative h-1 w-full rounded-full bg-secondary/30">
+<div class="absolute left-0 top-0 h-1 w-3/4 rounded-full bg-primary"></div>
+</div>
+<p class="text-center text-xs font-medium text-text-light/70 dark:text-text-dark/70 pt-2">Langkah 3 dari 4</p>
+</div>
+</header>
+<main class="flex-1 px-4 py-3 space-y-6">
+<label class="flex flex-col w-full">
+<p class="text-base font-medium pb-2 text-text-light dark:text-text-dark">Nama Basis Konten</p>
+<div class="relative flex w-full items-center">
+<span class="material-symbols-outlined absolute left-4 text-text-light/60 dark:text-text-dark/60">
+            description
+          </span>
+<input class="form-input w-full rounded-lg border border-secondary/50 bg-background-light dark:bg-background-dark focus:border-primary focus:ring-1 focus:ring-primary h-14 pl-12 pr-4 placeholder:text-text-light/50 dark:placeholder:text-text-dark/50 text-base font-normal" placeholder="Katalog Produk Musim Gugur" value=""/>
+</div>
+</label>
+<label class="flex flex-col w-full">
+<p class="text-base font-medium pb-2 text-text-light dark:text-text-dark">Deskripsi (Opsional)</p>
+<textarea class="form-input w-full rounded-lg border border-secondary/50 bg-background-light dark:bg-background-dark focus:border-primary focus:ring-1 focus:ring-primary min-h-36 p-4 placeholder:text-text-light/50 dark:placeholder:text-text-dark/50 text-base font-normal" placeholder="Deskripsikan secara singkat isi dari basis konten ini."></textarea>
+</label>
+<label class="flex flex-col w-full">
+<p class="text-base font-medium pb-2 text-text-light dark:text-text-dark">Pilih Kategori</p>
+<div class="relative">
+<select class="form-select w-full appearance-none rounded-lg border border-secondary/50 bg-background-light dark:bg-background-dark focus:border-primary focus:ring-1 focus:ring-primary h-14 pl-4 pr-10 text-base font-normal text-text-light dark:text-text-dark">
+<option>Pilih salah satu kategori</option>
+<option>Produk</option>
+<option>Layanan</option>
+<option>Blog</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-text-light/60 dark:text-text-dark/60">
+            expand_more
+          </span>
+</div>
+</label>
+<label class="flex flex-col w-full">
+<p class="text-base font-medium pb-2 text-text-light dark:text-text-dark">Tambahkan Tag (pisahkan dengan koma)</p>
+<div class="relative flex w-full items-center">
+<span class="material-symbols-outlined absolute left-4 text-text-light/60 dark:text-text-dark/60">
+            sell
+          </span>
+<input class="form-input w-full rounded-lg border border-secondary/50 bg-background-light dark:bg-background-dark focus:border-primary focus:ring-1 focus:ring-primary h-14 pl-12 pr-4 placeholder:text-text-light/50 dark:placeholder:text-text-dark/50 text-base font-normal" placeholder="fashion, diskon, terbaru" value=""/>
+</div>
+</label>
+</main>
+<footer class="sticky bottom-0 z-10 bg-background-light dark:bg-background-dark p-4">
+<button class="w-full h-14 bg-primary text-white font-bold rounded-lg shadow-2dp hover:bg-primary/90 transition-colors">
+        Selanjutnya
+      </button>
+</footer>
+<nav class="sticky bottom-0 z-10 mt-auto flex justify-around border-t border-secondary/30 bg-background-light dark:bg-background-dark py-2">
+<a class="flex flex-col items-center justify-center text-text-light/60 dark:text-text-dark/60 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs">Beranda</span>
+</a>
+<a class="flex flex-col items-center justify-center text-text-light/60 dark:text-text-dark/60 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">collections_bookmark</span>
+<span class="text-xs">Perpustakaan</span>
+</a>
+<a class="flex flex-col items-center justify-center text-text-light/60 dark:text-text-dark/60 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">calendar_month</span>
+<span class="text-xs">Jadwal</span>
+</a>
+<a class="flex flex-col items-center justify-center text-primary dark:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">add_circle</span>
+<span class="text-xs font-bold">Buat</span>
+</a>
+<a class="flex flex-col items-center justify-center text-text-light/60 dark:text-text-dark/60 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">account_circle</span>
+<span class="text-xs">Akun</span>
+</a>
+</nav>
+</div>
+</body></html>

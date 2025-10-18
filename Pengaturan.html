@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>General Settings</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#5AB9B6",
+                        "secondary": "#A3D4C9",
+                        "accent": "#F6B26B",
+                        "background-light": "#FAFAFA",
+                        "background-dark": "#1E1E1E",
+                        "text-light": "#1E1E1E",
+                        "text-dark": "#FAFAFA"
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.75rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="sticky top-0 z-10 flex items-center bg-background-light dark:bg-background-dark p-4 pb-3 justify-between shadow-soft">
+<div class="text-text-light dark:text-text-dark flex size-12 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</div>
+<h1 class="text-xl font-bold leading-tight tracking-tight text-text-light dark:text-text-dark flex-1 text-center">Pengaturan</h1>
+<div class="size-12 shrink-0"></div>
+</div>
+<main class="flex-1 p-4 space-y-6">
+<!-- Account Section -->
+<div class="bg-white dark:bg-zinc-800 rounded-lg shadow-soft overflow-hidden">
+<h2 class="px-4 pt-4 pb-2 text-lg font-bold text-text-light dark:text-text-dark">Akun</h2>
+<div class="flex items-center gap-4 px-4 min-h-14 justify-between hover:bg-gray-100 dark:hover:bg-zinc-700 cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="text-primary flex items-center justify-center rounded-lg bg-secondary/30 dark:bg-secondary/20 shrink-0 size-10">
+<span class="material-symbols-outlined">person</span>
+</div>
+<p class="text-text-light dark:text-text-dark text-base font-normal leading-normal flex-1 truncate">Profil Saya</p>
+</div>
+<div class="shrink-0">
+<span class="material-symbols-outlined text-text-light/70 dark:text-text-dark/70">chevron_right</span>
+</div>
+</div>
+<div class="flex items-center gap-4 px-4 min-h-14 justify-between hover:bg-gray-100 dark:hover:bg-zinc-700 cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="text-primary flex items-center justify-center rounded-lg bg-secondary/30 dark:bg-secondary/20 shrink-0 size-10">
+<span class="material-symbols-outlined">lock</span>
+</div>
+<p class="text-text-light dark:text-text-dark text-base font-normal leading-normal flex-1 truncate">Ganti Kata Sandi</p>
+</div>
+<div class="shrink-0">
+<span class="material-symbols-outlined text-text-light/70 dark:text-text-dark/70">chevron_right</span>
+</div>
+</div>
+<div class="flex items-center gap-4 px-4 min-h-14 justify-between hover:bg-gray-100 dark:hover:bg-zinc-700 cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="text-primary flex items-center justify-center rounded-lg bg-secondary/30 dark:bg-secondary/20 shrink-0 size-10">
+<span class="material-symbols-outlined">credit_card</span>
+</div>
+<p class="text-text-light dark:text-text-dark text-base font-normal leading-normal flex-1 truncate">Kelola Langganan</p>
+</div>
+<div class="shrink-0">
+<span class="material-symbols-outlined text-text-light/70 dark:text-text-dark/70">chevron_right</span>
+</div>
+</div>
+</div>
+<!-- Notifications Section -->
+<div class="bg-white dark:bg-zinc-800 rounded-lg shadow-soft overflow-hidden">
+<h2 class="px-4 pt-4 pb-2 text-lg font-bold text-text-light dark:text-text-dark">Notifikasi</h2>
+<div class="flex items-center gap-4 px-4 min-h-14 justify-between">
+<div class="flex items-center gap-4">
+<div class="text-primary flex items-center justify-center rounded-lg bg-secondary/30 dark:bg-secondary/20 shrink-0 size-10">
+<span class="material-symbols-outlined">notifications</span>
+</div>
+<p class="text-text-light dark:text-text-dark text-base font-normal leading-normal flex-1 truncate">Notifikasi Push</p>
+</div>
+<div class="shrink-0">
+<label class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none bg-gray-200 dark:bg-zinc-700 p-0.5 has-[:checked]:justify-end has-[:checked]:bg-primary">
+<div class="h-full w-[27px] rounded-full bg-white dark:bg-zinc-900" style="box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px, rgba(0, 0, 0, 0.06) 0px 3px 1px;"></div>
+<input checked="" class="invisible absolute" type="checkbox"/>
+</label>
+</div>
+</div>
+<div class="flex items-center gap-4 px-4 min-h-14 justify-between">
+<div class="flex items-center gap-4">
+<div class="text-primary flex items-center justify-center rounded-lg bg-secondary/30 dark:bg-secondary/20 shrink-0 size-10">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<p class="text-text-light dark:text-text-dark text-base font-normal leading-normal flex-1 truncate">Notifikasi Email</p>
+</div>
+<div class="shrink-0">
+<label class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none bg-gray-200 dark:bg-zinc-700 p-0.5 has-[:checked]:justify-end has-[:checked]:bg-primary">
+<div class="h-full w-[27px] rounded-full bg-white dark:bg-zinc-900" style="box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px, rgba(0, 0, 0, 0.06) 0px 3px 1px;"></div>
+<input class="invisible absolute" type="checkbox"/>
+</label>
+</div>
+</div>
+</div>
+<!-- Application Section -->
+<div class="bg-white dark:bg-zinc-800 rounded-lg shadow-soft overflow-hidden">
+<h2 class="px-4 pt-4 pb-2 text-lg font-bold text-text-light dark:text-text-dark">Aplikasi</h2>
+<div class="flex items-center gap-4 px-4 min-h-14 justify-between hover:bg-gray-100 dark:hover:bg-zinc-700 cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="text-primary flex items-center justify-center rounded-lg bg-secondary/30 dark:bg-secondary/20 shrink-0 size-10">
+<span class="material-symbols-outlined">language</span>
+</div>
+<p class="text-text-light dark:text-text-dark text-base font-normal leading-normal flex-1 truncate">Bahasa</p>
+</div>
+<div class="flex items-center gap-2">
+<p class="text-sm text-text-light/70 dark:text-text-dark/70">Indonesia</p>
+<span class="material-symbols-outlined text-text-light/70 dark:text-text-dark/70">chevron_right</span>
+</div>
+</div>
+<div class="flex items-center gap-4 px-4 min-h-14 justify-between">
+<div class="flex items-center gap-4">
+<div class="text-primary flex items-center justify-center rounded-lg bg-secondary/30 dark:bg-secondary/20 shrink-0 size-10">
+<span class="material-symbols-outlined">dark_mode</span>
+</div>
+<p class="text-text-light dark:text-text-dark text-base font-normal leading-normal flex-1 truncate">Mode Gelap</p>
+</div>
+<div class="shrink-0">
+<label class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none bg-gray-200 dark:bg-zinc-700 p-0.5 has-[:checked]:justify-end has-[:checked]:bg-primary">
+<div class="h-full w-[27px] rounded-full bg-white dark:bg-zinc-900" style="box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px, rgba(0, 0, 0, 0.06) 0px 3px 1px;"></div>
+<input class="invisible absolute" id="dark-mode-toggle" type="checkbox"/>
+</label>
+</div>
+</div>
+<div class="flex items-center gap-4 px-4 min-h-14 justify-between hover:bg-gray-100 dark:hover:bg-zinc-700 cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="text-primary flex items-center justify-center rounded-lg bg-secondary/30 dark:bg-secondary/20 shrink-0 size-10">
+<span class="material-symbols-outlined">delete</span>
+</div>
+<p class="text-text-light dark:text-text-dark text-base font-normal leading-normal flex-1 truncate">Hapus Cache</p>
+</div>
+</div>
+</div>
+<!-- Support Section -->
+<div class="bg-white dark:bg-zinc-800 rounded-lg shadow-soft overflow-hidden">
+<h2 class="px-4 pt-4 pb-2 text-lg font-bold text-text-light dark:text-text-dark">Dukungan</h2>
+<div class="flex items-center gap-4 px-4 min-h-14 justify-between hover:bg-gray-100 dark:hover:bg-zinc-700 cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="text-primary flex items-center justify-center rounded-lg bg-secondary/30 dark:bg-secondary/20 shrink-0 size-10">
+<span class="material-symbols-outlined">help_outline</span>
+</div>
+<p class="text-text-light dark:text-text-dark text-base font-normal leading-normal flex-1 truncate">Bantuan &amp; Dukungan</p>
+</div>
+<div class="shrink-0">
+<span class="material-symbols-outlined text-text-light/70 dark:text-text-dark/70">chevron_right</span>
+</div>
+</div>
+<div class="flex items-center gap-4 px-4 min-h-14 justify-between hover:bg-gray-100 dark:hover:bg-zinc-700 cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="text-primary flex items-center justify-center rounded-lg bg-secondary/30 dark:bg-secondary/20 shrink-0 size-10">
+<span class="material-symbols-outlined">privacy_tip</span>
+</div>
+<p class="text-text-light dark:text-text-dark text-base font-normal leading-normal flex-1 truncate">Kebijakan Privasi</p>
+</div>
+<div class="shrink-0">
+<span class="material-symbols-outlined text-text-light/70 dark:text-text-dark/70">chevron_right</span>
+</div>
+</div>
+<div class="flex items-center gap-4 px-4 min-h-14 justify-between hover:bg-gray-100 dark:hover:bg-zinc-700 cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="text-primary flex items-center justify-center rounded-lg bg-secondary/30 dark:bg-secondary/20 shrink-0 size-10">
+<span class="material-symbols-outlined">gavel</span>
+</div>
+<p class="text-text-light dark:text-text-dark text-base font-normal leading-normal flex-1 truncate">Syarat &amp; Ketentuan</p>
+</div>
+<div class="shrink-0">
+<span class="material-symbols-outlined text-text-light/70 dark:text-text-dark/70">chevron_right</span>
+</div>
+</div>
+</div>
+<!-- Logout Button -->
+<div class="pt-4">
+<button class="w-full flex items-center justify-center gap-2 rounded-lg border border-red-500 px-4 py-3 text-red-500 font-bold hover:bg-red-50 dark:hover:bg-red-500/10 transition-colors">
+<span class="material-symbols-outlined">logout</span>
+                    Keluar
+                 </button>
+</div>
+</main>
+<!-- Bottom Navigation -->
+<div class="sticky bottom-0 z-10 grid grid-cols-5 items-center border-t border-gray-200 bg-white/80 backdrop-blur-sm dark:border-zinc-700 dark:bg-zinc-800/80">
+<a class="flex flex-col items-center gap-1 p-2 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs">Beranda</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">photo_library</span>
+<span class="text-xs">Perpustakaan</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">schedule</span>
+<span class="text-xs">Jadwal</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">add_circle</span>
+<span class="text-xs">Buat</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-accent dark:text-accent" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-xs font-bold">Akun</span>
+</a>
+</div>
+</div>
+<script>
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        const html = document.documentElement;
+
+        // Check for saved theme in localStorage
+        if (localStorage.getItem('theme') === 'dark') {
+            html.classList.add('dark');
+            darkModeToggle.checked = true;
+        } else {
+            html.classList.remove('dark');
+            darkModeToggle.checked = false;
+        }
+        
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                html.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                html.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+            }
+        });
+    </script>
+</body></html>

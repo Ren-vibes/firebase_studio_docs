@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AI Content Assistant</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#5AB9B6",
+                        "secondary": "#A3D4C9",
+                        "accent": "#F6B26B",
+                        "background-light": "#FAFAFA",
+                        "background-dark": "#1E1E1E",
+                        "text-primary": "#1E1E1E",
+                        "text-dark": "#FFFFFF"
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.75rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    boxShadow: {
+                        'md': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1)',
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-primary dark:text-text-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- App Bar -->
+<header class="flex items-center p-4 pb-2 justify-between sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm z-10">
+<button class="flex size-10 shrink-0 items-center justify-center rounded-full">
+<span class="material-symbols-outlined text-text-primary dark:text-text-dark">save</span>
+</button>
+<h1 class="text-lg font-bold leading-tight tracking-[-0.015em]">Buat Slideshow Baru</h1>
+<button class="px-4 py-2 text-white bg-primary rounded-full text-base font-bold leading-normal tracking-[0.015em] shrink-0 shadow-md">Ekspor</button>
+</header>
+<!-- Main Content -->
+<main class="flex-grow p-4">
+<!-- Video Preview Player -->
+<div class="relative flex items-center justify-center bg-gray-200 dark:bg-gray-800 bg-cover bg-center aspect-video rounded-xl shadow-md" data-alt="Abstract gradient from light teal to white">
+<div class="text-center p-4">
+<p class="text-gray-500 dark:text-gray-400">Ketuk '+' untuk menambahkan media pertama Anda</p>
+</div>
+<!-- <button class="absolute flex shrink-0 items-center justify-center rounded-full size-16 bg-black/40 text-white">
+                    <span class="material-symbols-outlined text-3xl">play_arrow</span>
+                </button> -->
+</div>
+<!-- Timeline Preview -->
+<div class="mt-6">
+<div class="flex items-center space-x-3 overflow-x-auto pb-3 -mx-4 px-4">
+<div class="flex-shrink-0 w-24 h-24 bg-gray-200 dark:bg-gray-800 rounded-lg bg-center bg-no-repeat bg-cover shadow-sm" data-alt="A tranquil beach scene at sunset" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBMM8LDr-tDzJyZixyQM-lVgMErX5bo9Kl8LhJOTfMRU0EnUoJrHrbgtiV9tF_e0S4G-YFLfEOF7IUZ5DISTs1Wsk7tJYKUVf_WzL8-dx-wYRcJZMy8HCKZ4mdBrE4lEsdwrRS2IijFrh-jx4UqjU3OusEuieqHiqXf21dj7I-nNhB58YKxUNj1Mdg8vbUk3lpxJiUs0pUAzSmb6vaNdxSkhsCjAdAzwhyLe5H_VwuZViJxSUISUOQfvjAapE5l_dvvYGWe2WbC58Gi");'></div>
+<div class="flex-shrink-0 w-24 h-24 bg-gray-200 dark:bg-gray-800 rounded-lg bg-center bg-no-repeat bg-cover shadow-sm" data-alt="A vibrant city street at night" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDqrrI1aYF5X97u657S8FIKlAdVVP8L9HarncEXpL7mDUJKniW_lbd4Th88jP2XETANOGYgQVUkIdtzg2mkhmALMqOsDPwcoXcTdYlm_MgzoLRufhFDRqWEOlRBCBjOhjA9YbgdiIddHPvTGG5BLPukjzGJTLpzS9CH2JYoEoRgC4ZL2cP28luTJR0PhZYL-l9CGYyWygxiff9nINP5TMU6T7Z5sKnoiANr4voIasobo4Rm2SFpH9bFzrqX9mA4CSt91cKMqFwVNfRj");'></div>
+<div class="flex-shrink-0 w-24 h-24 bg-gray-200 dark:bg-gray-800 rounded-lg bg-center bg-no-repeat bg-cover shadow-sm" data-alt="A close-up of a delicious pastry" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDbWT3Xwm_tKi5pJtrsN-VGtWpbvk2190DvaKG56GvBnaVTqrnMz3YVItK87tprjherm7CYlxONXXs8mgV-yEUV3rFLzG2-pLunpFBnV2jDnk0JukoPZSy63pCnDNuI07oN9tgxyRvPD_u0-sYm174DnsvZn_YGh5-7kN63wE3nJTqk5L7sCEk8x_9xI1ljH4qgEmyGhn65r9YWbMBLTnE7h6lrTiflpyJ2_snnWVSCJn3RDICK2sEbISWoAaArANkEGkHItQKX_1c2");'></div>
+<button class="flex-shrink-0 w-24 h-24 flex items-center justify-center bg-secondary/30 dark:bg-secondary/20 rounded-lg border-2 border-dashed border-primary dark:border-primary/50 text-primary">
+<span class="material-symbols-outlined text-4xl">add</span>
+</button>
+</div>
+</div>
+<!-- Audio Waveform -->
+<div class="mt-4 p-4 rounded-lg bg-gradient-to-b from-secondary/20 to-transparent dark:from-secondary/10 dark:to-transparent">
+<div class="flex items-center justify-center h-16 bg-gray-200 dark:bg-gray-800 rounded-md">
+<p class="text-sm text-gray-500 dark:text-gray-400">Pilih Musik</p>
+</div>
+</div>
+<!-- Toolbar Aksi -->
+<div class="mt-4 p-2 bg-secondary/30 dark:bg-secondary/10 rounded-lg flex justify-around items-center">
+<button class="p-3 flex flex-col items-center text-text-primary dark:text-text-dark/80 space-y-1">
+<span class="material-symbols-outlined">photo_library</span>
+<span class="text-xs">Media</span>
+</button>
+<button class="p-3 flex flex-col items-center text-text-primary dark:text-text-dark/80 space-y-1">
+<span class="material-symbols-outlined">title</span>
+<span class="text-xs">Teks</span>
+</button>
+<button class="p-3 flex flex-col items-center text-text-primary dark:text-text-dark/80 space-y-1">
+<span class="material-symbols-outlined">music_note</span>
+<span class="text-xs">Musik</span>
+</button>
+<button class="p-3 flex flex-col items-center text-text-primary dark:text-text-dark/80 space-y-1">
+<span class="material-symbols-outlined">sticker</span>
+<span class="text-xs">Stiker</span>
+</button>
+</div>
+<!-- Tip/Accent element -->
+<div class="mt-4 p-3 bg-accent/20 dark:bg-accent/10 rounded-lg flex items-center space-x-3">
+<span class="material-symbols-outlined text-accent">lightbulb</span>
+<p class="text-sm text-accent/80 dark:text-accent/90">Tips: Seret klip untuk mengatur ulang urutannya!</p>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<footer class="sticky bottom-0 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-sm shadow-[0_-2px_5px_rgba(0,0,0,0.05)] dark:shadow-[0_-2px_5px_rgba(0,0,0,0.2)]">
+<nav class="flex justify-around items-center h-20 px-2">
+<a class="flex flex-col items-center justify-center w-full text-gray-500 dark:text-gray-400 space-y-1" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs">Beranda</span>
+</a>
+<a class="flex flex-col items-center justify-center w-full text-gray-500 dark:text-gray-400 space-y-1" href="#">
+<span class="material-symbols-outlined">photo_album</span>
+<span class="text-xs">Perpustakaan</span>
+</a>
+<a class="flex flex-col items-center justify-center w-full text-primary space-y-1" href="#">
+<div class="p-3 bg-primary text-white rounded-full">
+<span class="material-symbols-outlined">add_circle</span>
+</div>
+<span class="text-xs font-bold">Buat</span>
+</a>
+<a class="flex flex-col items-center justify-center w-full text-gray-500 dark:text-gray-400 space-y-1" href="#">
+<span class="material-symbols-outlined">calendar_today</span>
+<span class="text-xs">Jadwal</span>
+</a>
+<a class="flex flex-col items-center justify-center w-full text-gray-500 dark:text-gray-400 space-y-1" href="#">
+<span class="material-symbols-outlined">account_circle</span>
+<span class="text-xs">Akun</span>
+</a>
+</nav>
+</footer>
+</div>
+</body></html>

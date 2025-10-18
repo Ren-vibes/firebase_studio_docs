@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AI Content Assistant Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#5AB9B6",
+                        "secondary": "#A3D4C9",
+                        "accent": "#F6B26B",
+                        "background-light": "#FAFAFA",
+                        "background-dark": "#1E1E1E",
+                        "text-primary": "#1E1E1E",
+                        "text-dark": "#FFFFFF"
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    boxShadow: {
+                        'md': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-primary dark:text-text-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Header -->
+<div class="flex items-center p-4 pb-2 justify-between">
+<h2 class="text-2xl font-bold leading-tight tracking-[-0.015em] flex-1">Hi, Pengguna 👋</h2>
+<button class="flex items-center justify-center h-12 w-12 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">
+<span class="material-symbols-outlined text-text-primary dark:text-text-dark">settings</span>
+</button>
+</div>
+<!-- Quick Actions Bar -->
+<div class="flex justify-stretch px-4 py-3">
+<div class="flex flex-1 gap-3 flex-wrap justify-between">
+<button class="flex flex-1 items-center justify-center gap-2 min-w-[84px] max-w-[480px] cursor-pointer overflow-hidden rounded-lg h-12 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] shadow-md">
+<span class="material-symbols-outlined">add</span>
+<span class="truncate">Buat Post</span>
+</button>
+<button class="flex items-center justify-center gap-2 min-w-[84px] max-w-[480px] cursor-pointer overflow-hidden rounded-lg h-12 px-4 bg-secondary/30 dark:bg-secondary/20 text-primary text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="material-symbols-outlined">database</span>
+<span class="truncate">Basis Konten</span>
+</button>
+<button class="flex items-center justify-center gap-2 min-w-[84px] max-w-[480px] cursor-pointer overflow-hidden rounded-lg h-12 px-4 bg-secondary/30 dark:bg-secondary/20 text-primary text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="material-symbols-outlined">auto_awesome</span>
+<span class="truncate">Rencana Auto</span>
+</button>
+</div>
+</div>
+<!-- Smart Suggestion Card -->
+<div class="p-4">
+<div class="bg-gradient-to-br from-secondary to-secondary/30 flex flex-col items-stretch justify-end rounded-xl shadow-md p-6">
+<p class="text-text-primary text-lg font-bold leading-tight">Ide Cerdas untuk Anda</p>
+<p class="text-text-primary/80 text-base font-medium leading-normal mt-1 mb-4">"Coba buat postingan carousel tentang 3 manfaat utama produk kopi susu Anda untuk pekerja remote."</p>
+<button class="flex min-w-[84px] max-w-[480px] self-start cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-accent text-white text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Gunakan Ide Ini</span>
+</button>
+</div>
+</div>
+<!-- Weekly Calendar Widget -->
+<div class="px-4 py-2">
+<div class="flex min-w-72 max-w-full flex-1 flex-col gap-0.5">
+<div class="flex items-center p-1 justify-between">
+<p class="text-text-primary dark:text-text-dark text-lg font-bold leading-tight flex-1">Jadwal Minggu Ini</p>
+<button class="flex items-center text-primary font-bold">
+<span>Lihat Semua</span>
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+<div class="grid grid-cols-7 gap-2 mt-2">
+<div class="text-center">
+<p class="text-text-primary/60 dark:text-text-dark/60 text-sm font-bold">Sen</p>
+<button class="h-10 w-10 text-text-primary dark:text-text-dark text-sm font-medium leading-normal mt-2">
+<div class="flex size-full items-center justify-center rounded-full relative">13
+                                <span class="absolute h-1.5 w-1.5 bg-primary rounded-full bottom-1"></span>
+</div>
+</button>
+</div>
+<div class="text-center">
+<p class="text-text-primary/60 dark:text-text-dark/60 text-sm font-bold">Sel</p>
+<button class="h-10 w-10 text-text-primary dark:text-text-dark text-sm font-medium leading-normal mt-2">
+<div class="flex size-full items-center justify-center rounded-full">14</div>
+</button>
+</div>
+<div class="text-center">
+<p class="text-text-primary/60 dark:text-text-dark/60 text-sm font-bold">Rab</p>
+<button class="h-10 w-10 text-white text-sm font-medium leading-normal mt-2">
+<div class="flex size-full items-center justify-center rounded-full bg-primary">15</div>
+</button>
+</div>
+<div class="text-center">
+<p class="text-text-primary/60 dark:text-text-dark/60 text-sm font-bold">Kam</p>
+<button class="h-10 w-10 text-text-primary dark:text-text-dark text-sm font-medium leading-normal mt-2">
+<div class="flex size-full items-center justify-center rounded-full relative">16
+                                <span class="absolute h-1.5 w-1.5 bg-accent rounded-full bottom-1"></span>
+</div>
+</button>
+</div>
+<div class="text-center">
+<p class="text-text-primary/60 dark:text-text-dark/60 text-sm font-bold">Jum</p>
+<button class="h-10 w-10 text-text-primary dark:text-text-dark text-sm font-medium leading-normal mt-2">
+<div class="flex size-full items-center justify-center rounded-full">17</div>
+</button>
+</div>
+<div class="text-center">
+<p class="text-text-primary/60 dark:text-text-dark/60 text-sm font-bold">Sab</p>
+<button class="h-10 w-10 text-text-primary dark:text-text-dark text-sm font-medium leading-normal mt-2">
+<div class="flex size-full items-center justify-center rounded-full">18</div>
+</button>
+</div>
+<div class="text-center">
+<p class="text-text-primary/60 dark:text-text-dark/60 text-sm font-bold">Min</p>
+<button class="h-10 w-10 text-text-primary dark:text-text-dark text-sm font-medium leading-normal mt-2">
+<div class="flex size-full items-center justify-center rounded-full relative">19
+                                <span class="absolute h-1.5 w-1.5 bg-primary rounded-full bottom-1"></span>
+</div>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- AI Usage Summary -->
+<div class="flex flex-col gap-2 p-4">
+<div class="flex gap-6 justify-between">
+<p class="text-text-primary dark:text-text-dark text-base font-bold leading-normal">Penggunaan AI Anda</p>
+</div>
+<div class="rounded-full bg-secondary/30 dark:bg-secondary/20 h-2.5">
+<div class="h-2.5 rounded-full bg-accent" style="width: 80%;"></div>
+</div>
+<p class="text-text-primary/60 dark:text-text-dark/60 text-sm font-normal leading-normal">Tersisa 80/100 generasi</p>
+</div>
+<!-- Active Bases List -->
+<div class="p-4 pt-2">
+<h3 class="text-text-primary dark:text-text-dark text-lg font-bold leading-tight mb-3">Basis Aktif</h3>
+<div class="space-y-3">
+<div class="bg-white dark:bg-gray-800 p-4 rounded-xl shadow-md flex items-center justify-between">
+<div>
+<p class="font-bold text-text-primary dark:text-text-dark">Promo Kopi Susu</p>
+<p class="text-sm text-text-primary/60 dark:text-text-dark/60">Selanjutnya: Besok, 10:00</p>
+</div>
+<span class="material-symbols-outlined text-text-primary/40 dark:text-text-dark/40">chevron_right</span>
+</div>
+<div class="bg-white dark:bg-gray-800 p-4 rounded-xl shadow-md flex items-center justify-between">
+<div>
+<p class="font-bold text-text-primary dark:text-text-dark">Tips Fotografi Produk</p>
+<p class="text-sm text-text-primary/60 dark:text-text-dark/60">Selanjutnya: 19 Mei, 15:30</p>
+</div>
+<span class="material-symbols-outlined text-text-primary/40 dark:text-text-dark/40">chevron_right</span>
+</div>
+</div>
+</div>
+<!-- Spacer for Bottom Nav -->
+<div class="h-24"></div>
+<!-- Bottom Navigation Bar -->
+<div class="fixed bottom-0 left-0 right-0 bg-white dark:bg-gray-800 shadow-[0_-2px_5px_rgba(0,0,0,0.05)] dark:shadow-[0_-2px_5px_rgba(0,0,0,0.2)]">
+<div class="flex justify-around items-center h-16">
+<button class="flex flex-col items-center justify-center text-primary">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs font-bold">Beranda</span>
+</button>
+<button class="flex flex-col items-center justify-center text-text-primary/60 dark:text-text-dark/60">
+<span class="material-symbols-outlined">folder</span>
+<span class="text-xs">Perpustakaan</span>
+</button>
+<button class="flex flex-col items-center justify-center text-text-primary/60 dark:text-text-dark/60 relative -top-4">
+<div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-white shadow-lg">
+<span class="material-symbols-outlined" style="font-size: 32px;">add</span>
+</div>
+</button>
+<button class="flex flex-col items-center justify-center text-text-primary/60 dark:text-text-dark/60">
+<span class="material-symbols-outlined">calendar_month</span>
+<span class="text-xs">Jadwal</span>
+</button>
+<button class="flex flex-col items-center justify-center text-text-primary/60 dark:text-text-dark/60">
+<span class="material-symbols-outlined">person</span>
+<span class="text-xs">Akun</span>
+</button>
+</div>
+</div>
+</div>
+</body></html>

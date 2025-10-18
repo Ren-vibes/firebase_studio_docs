@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Jadwal Konten</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#5AB9B6",
+                        "secondary": "#A3D4C9",
+                        "accent": "#F6B26B",
+                        "background-light": "#FAFAFA",
+                        "background-dark": "#1E1E1E",
+                        "text-primary": "#1E1E1E",
+                        "text-secondary": "#509592"
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10">
+<div class="text-text-primary dark:text-background-light flex size-12 shrink-0 items-center">
+</div>
+<h2 class="text-text-primary dark:text-background-light text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Jadwal</h2>
+<div class="flex w-12 items-center justify-end">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 bg-transparent text-text-primary dark:text-background-light gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+<span class="material-symbols-outlined text-text-primary dark:text-background-light text-2xl">
+                        notifications
+                    </span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-6 p-4">
+<div class="flex min-w-72 max-w-[336px] flex-1 flex-col gap-0.5 mx-auto">
+<div class="flex items-center p-1 justify-between">
+<button>
+<span class="material-symbols-outlined text-text-primary dark:text-background-light text-xl flex size-10 items-center justify-center">
+                            chevron_left
+                        </span>
+</button>
+<p class="text-text-primary dark:text-background-light text-base font-bold leading-tight flex-1 text-center">Oktober 2024</p>
+<button>
+<span class="material-symbols-outlined text-text-primary dark:text-background-light text-xl flex size-10 items-center justify-center">
+                            chevron_right
+                        </span>
+</button>
+</div>
+<div class="grid grid-cols-7">
+<p class="text-text-primary dark:text-background-light text-[13px] font-bold leading-normal tracking-[0.015em] flex h-12 w-full items-center justify-center pb-0.5">S</p>
+<p class="text-text-primary dark:text-background-light text-[13px] font-bold leading-normal tracking-[0.015em] flex h-12 w-full items-center justify-center pb-0.5">M</p>
+<p class="text-text-primary dark:text-background-light text-[13px] font-bold leading-normal tracking-[0.015em] flex h-12 w-full items-center justify-center pb-0.5">T</p>
+<p class="text-text-primary dark:text-background-light text-[13px] font-bold leading-normal tracking-[0.015em] flex h-12 w-full items-center justify-center pb-0.5">W</p>
+<p class="text-text-primary dark:text-background-light text-[13px] font-bold leading-normal tracking-[0.015em] flex h-12 w-full items-center justify-center pb-0.5">T</p>
+<p class="text-text-primary dark:text-background-light text-[13px] font-bold leading-normal tracking-[0.015em] flex h-12 w-full items-center justify-center pb-0.5">F</p>
+<p class="text-text-primary dark:text-background-light text-[13px] font-bold leading-normal tracking-[0.015em] flex h-12 w-full items-center justify-center pb-0.5">S</p>
+<button class="h-12 w-full text-text-primary dark:text-background-light col-start-2 text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full relative">1</div></button>
+<button class="h-12 w-full text-text-primary dark:text-background-light text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full relative">2</div></button>
+<button class="h-12 w-full text-text-primary dark:text-background-light text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full relative">3</div></button>
+<button class="h-12 w-full text-text-primary dark:text-background-light text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full relative">4</div></button>
+<button class="h-12 w-full text-text-primary dark:text-background-light text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full relative">5</div></button>
+<button class="h-12 w-full text-text-primary dark:text-background-light text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full relative">6</div></button>
+<button class="h-12 w-full text-text-primary dark:text-background-light text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full relative">7</div></button>
+<button class="h-12 w-full text-text-primary dark:text-background-light text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full relative">8</div></button>
+<button class="h-12 w-full text-text-primary dark:text-background-light text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full relative">9</div></button>
+<button class="h-12 w-full text-text-primary dark:text-background-light text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full relative">10</div></button>
+<button class="h-12 w-full text-text-primary dark:text-background-light text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full relative">11</div></button>
+<button class="h-12 w-full text-text-primary dark:text-background-light text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full relative">12</div></button>
+<button class="h-12 w-full text-text-primary dark:text-background-light text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full relative">13</div></button>
+<button class="h-12 w-full text-text-primary dark:text-background-light text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full relative">14</div></button>
+<button class="h-12 w-full text-white dark:text-text-primary text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full bg-secondary dark:bg-primary/80 relative"><span class="absolute bottom-1.5 h-1 w-1 rounded-full bg-accent"></span>15</div></button>
+<button class="h-12 w-full text-text-primary dark:text-background-light text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full relative">16</div></button>
+<button class="h-12 w-full text-white dark:text-text-primary text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full bg-primary dark:bg-primary relative"><span class="absolute bottom-1.5 h-1 w-1 rounded-full bg-accent"></span>17</div></button>
+<button class="h-12 w-full text-text-primary dark:text-background-light text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full relative">18</div></button>
+<button class="h-12 w-full text-text-primary dark:text-background-light text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full relative">19</div></button>
+<button class="h-12 w-full text-text-primary dark:text-background-light text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full relative">20</div></button>
+<button class="h-12 w-full text-text-primary dark:text-background-light text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full relative">21</div></button>
+<button class="h-12 w-full text-text-primary dark:text-background-light text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full relative">22</div></button>
+<button class="h-12 w-full text-text-primary dark:text-background-light text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full relative">23</div></button>
+<button class="h-12 w-full text-text-primary dark:text-background-light text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full relative">24</div></button>
+<button class="h-12 w-full text-text-primary dark:text-background-light text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full relative">25</div></button>
+<button class="h-12 w-full text-text-primary dark:text-background-light text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full relative">26</div></button>
+<button class="h-12 w-full text-text-primary dark:text-background-light text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full relative">27</div></button>
+<button class="h-12 w-full text-text-primary dark:text-background-light text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full relative">28</div></button>
+<button class="h-12 w-full text-text-primary dark:text-background-light text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full relative">29</div></button>
+<button class="h-12 w-full text-text-primary dark:text-background-light text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full relative">30</div></button>
+<button class="h-12 w-full text-text-primary dark:text-background-light text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full relative">31</div></button>
+</div>
+</div>
+</div>
+<h3 class="text-text-primary dark:text-background-light text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Postingan Terjadwal</h3>
+<div class="p-4 pt-0">
+<div class="flex items-stretch justify-between gap-4 rounded-xl bg-white dark:bg-background-dark/50 p-4 shadow-[0_4px_12px_rgba(0,0,0,0.05)]">
+<div class="flex flex-1 flex-col gap-4">
+<div class="flex flex-col gap-1">
+<p class="text-text-primary dark:text-background-light text-base font-bold leading-tight">Promo akhir pekan diskon 50%...</p>
+<p class="text-text-secondary dark:text-gray-400 text-sm font-normal leading-normal">15 Okt, 10:00 WIB</p>
+</div>
+<div class="flex items-center gap-2">
+<img alt="Facebook icon" class="h-5 w-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOB9qneEReqXeQllKtLiiuVpLzyR9k6oVSUYGgbwy-f3sJBzgSsYun6SpiBuUPWGEmXeZs9cEtx1Q44tnBIHgTEffNlzvu-ngESt7seGGgn0x6Ktf1ULfcs2YcuiV25j3jcMCGp-2STP0-mMYMEoLVCfMRgEoLEKzQ_xofHWqQUK6GLvDBYOz2-KpzAyCf-o6h2fFFR6x1gi5kUlCQsHQRuBAtvPmiyKWjgttkHUobw8FHQzz-a39NbIEFbxW0FO9jRREwF1xvKD3X"/>
+</div>
+</div>
+<div class="w-24 bg-center bg-no-repeat aspect-square bg-cover rounded-xl" data-alt="Abstract image of a product promotion" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD7MyiLaAUkO6xBi4A90euP1bVtC0VatI_pU3HwWE6ahNCK4ixKoJSJCdTEvTV0GbZcoCYxnOF4-NGrbbH8vV5kNfovipna-MzGLqPVTjkkkQPIahVKBZhFrrFu8beegvx8VWKNXm5kBeIVgk5QcFq5-UPkmcwttmC6nNEV6CUJrwKqYGnSsXBCm7-ODgl_kdaWOr_LDE49dtMy5CC8yo6sbj-CAvAXBHbmHESLe-WxYVQ1tzzYdDgnlffepti-nHz5ne7em_hk00Jk");'></div>
+</div>
+</div>
+<div class="p-4 pt-0">
+<div class="flex items-stretch justify-between gap-4 rounded-xl bg-white dark:bg-background-dark/50 p-4 shadow-[0_4px_12px_rgba(0,0,0,0.05)]">
+<div class="flex flex-1 flex-col gap-4">
+<div class="flex flex-col gap-1">
+<p class="text-text-primary dark:text-background-light text-base font-bold leading-tight">Konten di balik layar baru!</p>
+<p class="text-text-secondary dark:text-gray-400 text-sm font-normal leading-normal">17 Okt, 15:30 WIB</p>
+</div>
+<div class="flex items-center gap-2">
+<img alt="Instagram icon" class="h-5 w-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaCLWgFSRIFmvhJOfoS6g6QjfElR8_kaM3xWNCzFKdpH68flW5zcQRlpavlqYJvC205i1gXcWCV9E70-ODBUAzEKLDod0D9unwA6-t7JqA0rbI-sQoQCsZ1ctAW13iF2n-PnIve-9fSwmQFis8WlAyIHsaSY1MJwyoyEk-0kUg65vS7zNI557jYWB77YlE7xRanXB-711kVMrsdCYqaNbiy6gr0M5Z_V79xs97Jb8EyVivLEgfzThiWx2tyeg6umj2_VJtGc2xEOzA"/>
+</div>
+</div>
+<div class="w-24 bg-center bg-no-repeat aspect-square bg-cover rounded-xl" data-alt="Behind the scenes photo shoot" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBMQNFNaEzUKY7pEN8UnEAKsOWtLJycSq5_S6osI44BBYiG33B9cA0UAGOafrlfWMf49Ja-0HX5oisqGJIPqjSdHichPHIy-UZQ4E3o7UyYWHd4x54ks4FFy5IGefSeASTDH2jnely5RvJcik4s9XnPIc-DuObBqKdhVCu4SaSzkvlCcUrAbHbUnb2yiFC5hs3BiqiOSgXkB-QshCRbeW-tV1p4hk04ZaAd1sjEULreCtRtAxgMI9Ul9AqdYRfu3jkUcHM_bEIBoXk-");'></div>
+</div>
+</div>
+<div class="fixed bottom-20 right-4">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 px-6 gap-2 text-base font-bold leading-normal tracking-[0.015em] bg-primary text-white shadow-lg shadow-primary/40">
+<span class="material-symbols-outlined">add</span>
+<span class="truncate">Buat Rencana Baru</span>
+</button>
+</div>
+<div class="pb-24"></div>
+<nav class="fixed bottom-0 left-0 right-0 bg-white dark:bg-background-dark/80 backdrop-blur-sm border-t border-gray-200 dark:border-gray-800 flex justify-around h-20 items-center">
+<a class="flex flex-col items-center gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs">Beranda</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">photo_library</span>
+<span class="text-xs">Perpustakaan</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary dark:text-primary" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+<span class="text-xs font-bold">Jadwal</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">add_circle</span>
+<span class="text-xs">Buat</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-xs">Akun</span>
+</a>
+</nav>
+</div>
+</body></html>

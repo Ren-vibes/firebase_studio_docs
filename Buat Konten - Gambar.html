@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AI Content Assistant</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#5AB9B6",
+                        "secondary": "#A3D4C9",
+                        "accent": "#F6B26B",
+                        "background-light": "#FAFAFA",
+                        "background-dark": "#1E1E1E",
+                        "text-light": "#1E1E1E",
+                        "text-dark": "#FAFAFA",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem", // 8px
+                        "lg": "0.75rem", // 12px
+                        "xl": "1rem",
+                        "full": "9999px"
+                    },
+                    boxShadow: {
+                        'md': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)', // 2dp elevation
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-size: 24px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden pb-28">
+<!-- Top App Bar -->
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10">
+<div class="text-text-light dark:text-text-dark flex size-12 shrink-0 items-center justify-start">
+<span class="material-symbols-outlined">arrow_back</span>
+</div>
+<h2 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Buat Konten Gambar</h2>
+<div class="flex size-12 shrink-0 items-center"></div>
+</div>
+<div class="flex-grow p-4 space-y-6">
+<!-- Image Preview Card -->
+<div class="flex flex-col items-stretch justify-start rounded-lg shadow-md bg-white dark:bg-zinc-800">
+<div class="relative w-full bg-gradient-to-br from-secondary to-white dark:from-secondary/50 dark:to-zinc-800 aspect-video bg-cover rounded-t-lg" data-alt="soft pastel gradient from light teal to white">
+<img class="w-full h-full object-cover rounded-t-lg" data-alt="AI-generated image of a small business setting with a motivational quote overlay." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCd6JW8U9Dhfp61Rr9vp4Gx1kOjZoTvF4r5d2rJLAVielBz5QM4wPOC8KLu7k-0TwGYAFKDJM431fQEM7Ya1OpJ1ijx5yM4DcrTlEBquq1cCXaz5ncq9Log7XJ9bukfyno1UKOEHjuWFyy6nRLE7B1MehTu-ZsJ_PP9bzELY3jKN-lKrg6MJnmX_PooHVHpGCA-6UeV0kXxbx-ntxcWLt_oYD8-RnYUHmuXxo1fdxCgcYDFC8jZ_rgVaXaCYyYT6Lujbn2_GfbDeRk3"/>
+<button class="absolute top-3 right-3 flex min-w-[40px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 w-10 bg-black/30 text-white text-sm font-medium leading-normal backdrop-blur-sm">
+<span class="material-symbols-outlined">refresh</span>
+</button>
+</div>
+<div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 p-4">
+<p class="text-text-light dark:text-text-dark text-lg font-bold leading-tight tracking-[-0.015em]">Gambar yang dihasilkan AI</p>
+<p class="text-text-light/70 dark:text-text-dark/70 text-sm">Ini adalah draf awal. Anda bisa menghasilkan gambar baru atau mengedit detail di bawah.</p>
+</div>
+</div>
+<!-- Input Fields Section -->
+<div class="space-y-4">
+<!-- Caption Input -->
+<label class="flex flex-col min-w-40 flex-1">
+<div class="flex items-center pb-2">
+<span class="material-symbols-outlined text-primary mr-2">edit_square</span>
+<p class="text-text-light dark:text-text-dark text-base font-bold leading-normal">Caption</p>
+</div>
+<textarea class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-light dark:text-text-dark focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-zinc-300 dark:border-zinc-600 bg-white dark:bg-zinc-800 focus:border-primary min-h-36 placeholder:text-zinc-400 dark:placeholder:text-zinc-500 p-4 text-base font-normal leading-normal" placeholder="Tulis caption yang menarik di sini...">Ubah ide menjadi kenyataan. ✨ Dengan bantuan AI, membuat konten untuk bisnis Anda tidak pernah semudah ini. Siap untuk berkembang?</textarea>
+</label>
+<!-- Hashtag Input -->
+<label class="flex flex-col min-w-40 flex-1">
+<div class="flex items-center pb-2">
+<span class="material-symbols-outlined text-primary mr-2">tag</span>
+<p class="text-text-light dark:text-text-dark text-base font-bold leading-normal">Hashtag</p>
+</div>
+<div class="flex w-full flex-1 items-stretch rounded-lg border border-zinc-300 dark:border-zinc-600 focus-within:ring-2 focus-within:ring-primary/50 focus-within:border-primary bg-white dark:bg-zinc-800">
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden text-text-light dark:text-text-dark focus:outline-0 focus:ring-0 border-0 bg-transparent h-14 placeholder:text-zinc-400 dark:placeholder:text-zinc-500 p-4 text-base font-normal leading-normal" placeholder="Tambahkan hashtag..." value="#inspirasi #bisnis #kontenai #ukmnaikkelas"/>
+</div>
+</label>
+</div>
+</div>
+<!-- CTA Button Group -->
+<div class="fixed bottom-16 sm:bottom-0 left-0 right-0 p-4 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-t border-zinc-200 dark:border-zinc-700 z-10">
+<div class="flex flex-1 gap-3 flex-wrap justify-between">
+<button class="flex flex-1 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-4 bg-transparent border border-secondary text-primary text-base font-bold leading-normal tracking-[0.015em] gap-2">
+<span class="material-symbols-outlined">sync</span>
+<span class="truncate">Ulangi</span>
+</button>
+<button class="flex flex-1 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-4 bg-transparent border border-secondary text-primary text-base font-bold leading-normal tracking-[0.015em] gap-2">
+<span class="material-symbols-outlined">save</span>
+<span class="truncate">Simpan</span>
+</button>
+<button class="flex flex-1 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-4 bg-primary text-white dark:text-text-light text-base font-bold leading-normal tracking-[0.015em] gap-2">
+<span class="material-symbols-outlined">calendar_add_on</span>
+<span class="truncate">Jadwalkan</span>
+</button>
+</div>
+</div>
+<!-- Bottom Navigation Bar -->
+<div class="fixed bottom-0 left-0 right-0 bg-white dark:bg-zinc-900 shadow-[0_-2px_5px_rgba(0,0,0,0.05)] dark:shadow-[0_-2px_5px_rgba(0,0,0,0.2)]">
+<div class="flex justify-around items-center h-16">
+<a class="flex flex-col items-center justify-center text-zinc-500 dark:text-zinc-400" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs">Beranda</span>
+</a>
+<a class="flex flex-col items-center justify-center text-zinc-500 dark:text-zinc-400" href="#">
+<span class="material-symbols-outlined">photo_library</span>
+<span class="text-xs">Perpustakaan</span>
+</a>
+<a class="flex flex-col items-center justify-center text-zinc-500 dark:text-zinc-400" href="#">
+<span class="material-symbols-outlined">calendar_month</span>
+<span class="text-xs">Jadwal</span>
+</a>
+<a class="flex flex-col items-center justify-center text-primary dark:text-primary" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">add_box</span>
+<span class="text-xs font-bold">Buat</span>
+</a>
+<a class="flex flex-col items-center justify-center text-zinc-500 dark:text-zinc-400" href="#">
+<span class="material-symbols-outlined">account_circle</span>
+<span class="text-xs">Akun</span>
+</a>
+</div>
+</div>
+</div>
+</body></html>

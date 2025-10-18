@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Offline Screen</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#5AB9B6",
+            "secondary": "#A3D4C9",
+            "accent": "#F6B26B",
+            "background-light": "#FAFAFA",
+            "background-dark": "#1E1E1E",
+            "text-light": "#1E1E1E",
+            "text-dark": "#FAFAFA"
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "Noto Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+          boxShadow: {
+            '2dp': '0 2px 4px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24)',
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col items-center justify-center bg-background-light dark:bg-background-dark p-4 group/design-root overflow-x-hidden">
+<div class="flex flex-col items-center gap-8 p-8 bg-white dark:bg-background-dark rounded-xl shadow-2dp max-w-md w-full">
+<div class="flex flex-col items-center gap-6 text-center">
+<div class="relative">
+<img alt="A confused-looking robot character with a disconnected plug, representing the offline state." class="w-full max-w-[280px] h-auto rounded-xl" data-alt="A confused-looking robot character with a disconnected plug, representing the offline state." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1EcZJXkuF1iAPYNo33Ibu4FcB1jlDkJSJlSZXzjl6ve7DvzB_5XaX8fkf04CAZH0br81F5A2BI5Ee-eqs-nrD5WI5Ah6Nh36eIgeZkAzMiMg2onhTW4_iYHfxnUJ_7k5db3JDN8nAdZVgY0LhOD7CZwYQyRmyc5qn_wlQO7qmIEceJF-TqchVFBGZob9vvcz0MaOztmbWI2ePG3IWdZJHIjM022B9VaBmW-8WyBj-YLHbngTaPDl2SDqr-MERnZPLN0HSoGFi_vXK"/>
+<div class="absolute top-4 right-4 bg-accent/80 p-2 rounded-full">
+<span class="material-symbols-outlined text-white">wifi_off</span>
+</div>
+</div>
+<div class="flex max-w-[480px] flex-col items-center gap-2">
+<h2 class="text-text-light dark:text-text-dark text-2xl font-bold leading-tight tracking-tight">Sepertinya Anda Offline</h2>
+<p class="text-text-light/80 dark:text-text-dark/80 text-base font-normal leading-normal max-w-sm">
+            Periksa koneksi internet Anda dan coba lagi untuk melanjutkan membuat konten yang luar biasa.
+          </p>
+</div>
+<button class="group flex min-w-[84px] w-full max-w-xs cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-xl h-12 px-6 bg-gradient-to-br from-primary to-secondary text-white text-base font-bold leading-normal tracking-[0.015em] shadow-lg transition-all duration-300 hover:shadow-2dp hover:from-primary/90 hover:to-secondary/90 active:scale-95">
+<span class="material-symbols-outlined transition-transform duration-300 group-hover:rotate-90">refresh</span>
+<span class="truncate">Coba Lagi</span>
+</button>
+</div>
+</div>
+</div>
+</body></html>

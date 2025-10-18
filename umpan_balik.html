@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Feedback</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#5AB9B6",
+            "secondary": "#A3D4C9",
+            "accent": "#F6B26B",
+            "background": "#FAFAFA",
+            "text-primary": "#1E1E1E",
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+          boxShadow: {
+            '2dp': '0 2px 4px rgba(0,0,0,0.1)',
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .form-select {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%231E1E1E' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+      background-position: right 0.5rem center;
+      background-repeat: no-repeat;
+      background-size: 1.5em 1.5em;
+      padding-right: 2.5rem;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background font-display text-text-primary">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<header class="flex items-center p-4 pb-2 justify-between sticky top-0 bg-background/90 backdrop-blur-sm z-10">
+<button class="flex size-10 shrink-0 items-center justify-center rounded-full text-text-primary">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+<h1 class="text-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Beri Kami Umpan Balik</h1>
+<div class="w-10"></div>
+</header>
+<main class="flex-1 px-4 py-6 space-y-6">
+<p class="text-text-primary/80 text-base font-normal leading-normal text-center">Kami menghargai masukan Anda! Beri tahu kami bagaimana kami dapat meningkatkan pengalaman Anda.</p>
+<div class="space-y-4">
+<label class="flex flex-col">
+<p class="text-text-primary text-base font-medium leading-normal pb-2">Kategori Umpan Balik</p>
+<select class="form-select flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-primary focus:outline-none focus:ring-2 focus:ring-primary border border-secondary/50 bg-secondary/30 h-14 placeholder:text-text-primary/50 px-4 text-base font-normal leading-normal shadow-2dp">
+<option>Pilih Kategori</option>
+<option>Laporan Bug</option>
+<option>Permintaan Fitur</option>
+<option>Umum</option>
+</select>
+</label>
+<label class="flex flex-col">
+<p class="text-text-primary text-base font-medium leading-normal pb-2">Jelaskan umpan balik Anda secara detail</p>
+<textarea class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-primary focus:outline-none focus:ring-2 focus:ring-primary border border-secondary/50 bg-secondary/30 min-h-36 placeholder:text-text-primary/50 p-4 text-base font-normal leading-normal shadow-2dp" placeholder="Ketik di sini..."></textarea>
+</label>
+</div>
+<div class="flex flex-col items-center gap-4 rounded-xl border-2 border-dashed border-secondary px-6 py-10 bg-gradient-to-b from-secondary/20 to-transparent">
+<p class="text-text-primary text-lg font-bold leading-tight tracking-[-0.015em] max-w-[480px] text-center">Lampirkan tangkapan layar (Opsional)</p>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-secondary text-text-primary text-sm font-bold leading-normal tracking-[0.015em] gap-2 shadow-2dp hover:bg-secondary/80 transition-colors">
+<span class="material-symbols-outlined text-xl" style="color: #5AB9B6;">cloud_upload</span>
+<span class="truncate">Unggah File</span>
+</button>
+</div>
+<div class="pt-4">
+<button class="w-full flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 px-4 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] shadow-2dp hover:bg-primary/90 transition-colors">
+<span class="truncate">Kirim Umpan Balik</span>
+</button>
+</div>
+</main>
+<footer class="sticky bottom-0 bg-background/90 backdrop-blur-sm border-t border-secondary/30">
+<nav class="flex justify-around items-center h-20">
+<a class="flex flex-col items-center justify-center text-text-primary/60 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-2xl">home</span>
+<span class="text-xs font-medium">Beranda</span>
+</a>
+<a class="flex flex-col items-center justify-center text-text-primary/60 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-2xl">photo_library</span>
+<span class="text-xs font-medium">Perpustakaan</span>
+</a>
+<a class="flex flex-col items-center justify-center text-text-primary/60 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-2xl">calendar_today</span>
+<span class="text-xs font-medium">Jadwal</span>
+</a>
+<a class="flex items-center justify-center w-16 h-16 -mt-8 rounded-full bg-accent shadow-2dp hover:bg-accent/90 transition-colors" href="#">
+<span class="material-symbols-outlined text-3xl text-white">add</span>
+</a>
+<a class="flex flex-col items-center justify-center text-primary transition-colors font-bold" href="#">
+<span class="material-symbols-outlined text-2xl">person</span>
+<span class="text-xs font-medium">Akun</span>
+</a>
+</nav>
+</footer>
+</div>
+</body></html>

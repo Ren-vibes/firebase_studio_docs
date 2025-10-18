@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Content Preview</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#5AB9B6",
+            "secondary": "#A3D4C9",
+            "accent": "#F6B26B",
+            "background-light": "#FAFAFA",
+            "background-dark": "#1E1E1E",
+            "text-light": "#1E1E1E",
+            "text-dark": "#FAFAFA",
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.75rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+          boxShadow: {
+            '2dp': '0 2px 4px rgba(0,0,0,0.1)',
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="flex items-center p-4 pb-2 justify-between sticky top-0 bg-background-light dark:bg-background-dark z-10">
+<button class="text-text-light dark:text-text-dark flex size-10 shrink-0 items-center justify-center rounded-full">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h2 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Pratinjau &amp; Simpan</h2>
+<div class="size-10"></div>
+</div>
+<main class="flex-1 p-4 space-y-4">
+<div class="flex flex-col items-stretch justify-start rounded-xl shadow-2dp bg-white dark:bg-zinc-800">
+<div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover rounded-t-xl" data-alt="AI generated image of a vibrant abstract landscape" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBdUVm4RjpyywsLYRNRE1kzPhAtMDpHP-dyrZaXEtNsj3OdvK45qj7Ca0KqO7A3r79wk-6nPNlyfD-ukLKdBKNGSXU2rrElqLRlQxByIZVhW7sxMaRfYYSnklZxmUl5q62kkAhuczQj6LwpRFr-xextqCDC7dSoDyIkZ02BFn_PDiVUPsi5y9yfgZtBTYZniIhkH6yxxnnSwlcbvm8TFlWm3nEeMbS8S3b0wzY551O3HV1nKZphk5QVbQaQ2g6ANAIeHBykW1n0u7Fq");'></div>
+</div>
+<div class="bg-white dark:bg-zinc-800 flex flex-col items-stretch justify-end rounded-xl shadow-2dp">
+<div class="flex w-full items-start justify-between gap-4 p-4">
+<div class="flex max-w-[440px] flex-1 flex-col gap-2">
+<p class="text-text-light dark:text-text-dark text-lg font-bold">Pratinjau Caption</p>
+<p class="text-gray-600 dark:text-gray-300 text-base font-normal">Ini adalah contoh caption yang dihasilkan oleh AI untuk postingan media sosial Anda. Pastikan untuk meninjaunya sebelum menyimpan.</p>
+</div>
+<button class="flex items-center justify-center h-10 px-3 rounded-lg bg-secondary text-primary">
+<span class="material-symbols-outlined">content_copy</span>
+</button>
+</div>
+</div>
+<div class="flex items-center justify-between gap-4 rounded-xl bg-gradient-to-r from-secondary/50 to-secondary/20 dark:from-secondary/30 dark:to-secondary/10 p-4 shadow-2dp">
+<div class="flex flex-col gap-1">
+<p class="text-text-light dark:text-text-dark text-base font-bold leading-tight">Estimasi Biaya</p>
+<p class="text-primary font-semibold leading-normal">10 Kredit</p>
+</div>
+<div class="flex items-center justify-center size-8 bg-accent/20 rounded-full">
+<span class="material-symbols-outlined text-accent text-lg">info</span>
+</div>
+</div>
+</main>
+<div class="sticky bottom-0 bg-background-light dark:bg-background-dark p-4 z-10 space-y-4">
+<div class="flex gap-3">
+<button class="flex flex-1 min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-5 bg-secondary/50 dark:bg-secondary/30 text-primary text-base font-bold leading-normal tracking-[0.015em] gap-2">
+<span class="material-symbols-outlined">refresh</span>
+<span class="truncate">Ulangi</span>
+</button>
+<button class="flex flex-1 min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-5 bg-primary text-white dark:text-text-light text-base font-bold leading-normal tracking-[0.015em] gap-2">
+<span class="material-symbols-outlined">save</span>
+<span class="truncate">Simpan</span>
+</button>
+</div>
+<div class="flex justify-around bg-white dark:bg-zinc-800 rounded-xl shadow-2dp p-2">
+<a class="flex flex-col items-center justify-center gap-1 p-2 rounded-lg w-1/5 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs font-medium">Beranda</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 p-2 rounded-lg w-1/5 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">photo_library</span>
+<span class="text-xs font-medium">Pustaka</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 p-2 rounded-lg w-1/5 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">calendar_today</span>
+<span class="text-xs font-medium">Jadwal</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 p-2 rounded-lg w-1/5 bg-primary/10 text-primary" href="#">
+<span class="material-symbols-outlined">add_circle</span>
+<span class="text-xs font-bold">Buat</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 p-2 rounded-lg w-1/5 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">account_circle</span>
+<span class="text-xs font-medium">Akun</span>
+</a>
+</div>
+</div>
+</div>
+</body></html>

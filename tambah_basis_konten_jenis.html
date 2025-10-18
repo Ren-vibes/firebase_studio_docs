@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Buat Basis Konten Baru</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#5AB9B6",
+            "secondary": "#A3D4C9",
+            "accent": "#F6B26B",
+            "background-light": "#FAFAFA",
+            "background-dark": "#112120",
+            "text-light": "#1E1E1E",
+            "text-dark": "#E0E0E0",
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "Noto Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "8px",
+            "lg": "12px",
+            "xl": "16px",
+            "full": "9999px"
+          },
+          boxShadow: {
+            'md': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    :root {
+      --radio-dot-svg: url('data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27rgb(246,178,107)%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3ccircle cx=%278%27 cy=%278%27 r=%278%27/%3e%3c/svg%3e');
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="flex-grow pb-32">
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center p-4 pb-2 justify-between">
+<div class="text-text-light dark:text-text-dark flex size-12 shrink-0 items-center justify-start">
+</div>
+<h2 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Buat Basis Konten Baru</h2>
+<div class="flex w-12 items-center justify-end">
+</div>
+</div>
+<div class="flex w-full flex-row items-center justify-center gap-3 py-3">
+<div class="h-2 w-8 rounded-full bg-accent"></div>
+<div class="h-2 w-8 rounded-full bg-secondary/50 dark:bg-secondary/20"></div>
+<div class="h-2 w-8 rounded-full bg-secondary/50 dark:bg-secondary/20"></div>
+<div class="h-2 w-8 rounded-full bg-secondary/50 dark:bg-secondary/20"></div>
+</div>
+</header>
+<main class="px-4">
+<div class="text-center pt-6 pb-2">
+<h1 class="text-text-light dark:text-text-dark tracking-tight text-3xl font-bold leading-tight">Pilih Jenis Basis Konten</h1>
+</div>
+<div class="text-center pb-8">
+<p class="text-text-light/70 dark:text-text-dark/70 text-base font-normal leading-normal px-4">Pilih satu jenis basis untuk memulai. Ini akan membantu AI memahami fokus konten Anda.</p>
+</div>
+<div class="flex flex-col gap-4">
+<label class="flex items-center gap-4 rounded-lg border border-solid border-secondary/50 dark:border-secondary/20 p-4 flex-row-reverse shadow-md bg-white dark:bg-background-dark has-[:checked]:border-accent has-[:checked]:ring-2 has-[:checked]:ring-accent/50 transition-all duration-200">
+<input class="h-6 w-6 border-2 border-secondary/50 dark:border-secondary/20 bg-transparent text-transparent checked:border-accent checked:bg-[image:--radio-dot-svg] focus:outline-none focus:ring-0 focus:ring-offset-0 checked:focus:border-accent" name="content-base-type" type="radio"/>
+<div class="flex grow items-center gap-4">
+<div class="flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/30 dark:bg-secondary/10 text-primary dark:text-secondary">
+<span class="material-symbols-outlined">package</span>
+</div>
+<div class="flex flex-col">
+<p class="text-text-light dark:text-text-dark text-base font-semibold leading-normal">Produk</p>
+<p class="text-text-light/70 dark:text-text-dark/70 text-sm font-normal leading-normal">Fokus pada penjualan dan promosi produk fisik atau digital Anda.</p>
+</div>
+</div>
+</label>
+<label class="flex items-center gap-4 rounded-lg border border-solid border-secondary/50 dark:border-secondary/20 p-4 flex-row-reverse shadow-md bg-white dark:bg-background-dark has-[:checked]:border-accent has-[:checked]:ring-2 has-[:checked]:ring-accent/50 transition-all duration-200">
+<input checked="" class="h-6 w-6 border-2 border-secondary/50 dark:border-secondary/20 bg-transparent text-transparent checked:border-accent checked:bg-[image:--radio-dot-svg] focus:outline-none focus:ring-0 focus:ring-offset-0 checked:focus:border-accent" name="content-base-type" type="radio"/>
+<div class="flex grow items-center gap-4">
+<div class="flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/30 dark:bg-secondary/10 text-primary dark:text-secondary">
+<span class="material-symbols-outlined">briefcase_meal</span>
+</div>
+<div class="flex flex-col">
+<p class="text-text-light dark:text-text-dark text-base font-semibold leading-normal">Layanan</p>
+<p class="text-text-light/70 dark:text-text-dark/70 text-sm font-normal leading-normal">Promosikan jasa atau keahlian yang Anda tawarkan kepada klien.</p>
+</div>
+</div>
+</label>
+<label class="flex items-center gap-4 rounded-lg border border-solid border-secondary/50 dark:border-secondary/20 p-4 flex-row-reverse shadow-md bg-white dark:bg-background-dark has-[:checked]:border-accent has-[:checked]:ring-2 has-[:checked]:ring-accent/50 transition-all duration-200">
+<input class="h-6 w-6 border-2 border-secondary/50 dark:border-secondary/20 bg-transparent text-transparent checked:border-accent checked:bg-[image:--radio-dot-svg] focus:outline-none focus:ring-0 focus:ring-offset-0 checked:focus:border-accent" name="content-base-type" type="radio"/>
+<div class="flex grow items-center gap-4">
+<div class="flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/30 dark:bg-secondary/10 text-primary dark:text-secondary">
+<span class="material-symbols-outlined">person</span>
+</div>
+<div class="flex flex-col">
+<p class="text-text-light dark:text-text-dark text-base font-semibold leading-normal">Merek Pribadi</p>
+<p class="text-text-light/70 dark:text-text-dark/70 text-sm font-normal leading-normal">Bangun citra diri dan audiens di sekitar nama atau persona Anda.</p>
+</div>
+</div>
+</label>
+<label class="flex items-center gap-4 rounded-lg border border-solid border-secondary/50 dark:border-secondary/20 p-4 flex-row-reverse shadow-md bg-white dark:bg-background-dark has-[:checked]:border-accent has-[:checked]:ring-2 has-[:checked]:ring-accent/50 transition-all duration-200">
+<input class="h-6 w-6 border-2 border-secondary/50 dark:border-secondary/20 bg-transparent text-transparent checked:border-accent checked:bg-[image:--radio-dot-svg] focus:outline-none focus:ring-0 focus:ring-offset-0 checked:focus:border-accent" name="content-base-type" type="radio"/>
+<div class="flex grow items-center gap-4">
+<div class="flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/30 dark:bg-secondary/10 text-primary dark:text-secondary">
+<span class="material-symbols-outlined">tag</span>
+</div>
+<div class="flex flex-col">
+<p class="text-text-light dark:text-text-dark text-base font-semibold leading-normal">Topik</p>
+<p class="text-text-light/70 dark:text-text-dark/70 text-sm font-normal leading-normal">Buat konten informatif atau hiburan seputar minat atau niche tertentu.</p>
+</div>
+</div>
+</label>
+</div>
+</main>
+</div>
+<div class="fixed bottom-0 left-0 right-0 p-4 bg-background-light dark:bg-background-dark border-t border-secondary/30 dark:border-secondary/20">
+<button class="w-full h-12 flex items-center justify-center rounded-lg bg-primary text-white font-bold text-base shadow-md hover:bg-primary/90 disabled:bg-gray-300 dark:disabled:bg-gray-600 disabled:text-gray-500 dark:disabled:text-gray-400">Selanjutnya</button>
+</div>
+<nav class="fixed bottom-0 left-0 right-0 bg-white/80 dark:bg-background-dark/80 backdrop-blur-sm border-t border-secondary/30 dark:border-secondary/20" style="padding-bottom: env(safe-area-inset-bottom);">
+<div class="flex h-20 items-center justify-around px-4">
+<a class="flex flex-col items-center gap-1 text-text-light/60 dark:text-text-dark/60" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs">Beranda</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-text-light/60 dark:text-text-dark/60" href="#">
+<span class="material-symbols-outlined">library_books</span>
+<span class="text-xs">Perpustakaan</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-text-light/60 dark:text-text-dark/60" href="#">
+<span class="material-symbols-outlined">calendar_today</span>
+<span class="text-xs">Jadwal</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary dark:text-primary" href="#">
+<span class="material-symbols-outlined">add_circle</span>
+<span class="text-xs font-bold">Buat</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-text-light/60 dark:text-text-dark/60" href="#">
+<span class="material-symbols-outlined">account_circle</span>
+<span class="text-xs">Akun</span>
+</a>
+</div>
+</nav>
+</div>
+</body></html>

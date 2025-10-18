@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AI Content Assistant</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#5AB9B6",
+            "secondary": "#A3D4C9",
+            "accent": "#F6B26B",
+            "background-light": "#FAFAFA",
+            "background-dark": "#1E1E1E",
+            "text-color": "#1E1E1E",
+            "text-color-dark": "#FAFAFA"
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "Noto Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+          boxShadow: {
+            '2dp': '0 2px 4px rgba(0,0,0,0.1)',
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-color dark:text-text-color-dark">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden pb-28">
+<!-- Top App Bar -->
+<header class="flex items-center p-4 pb-2 justify-between sticky top-0 bg-background-light dark:bg-background-dark z-10">
+<div class="flex size-12 shrink-0 items-center">
+<!-- Placeholder for potential back button -->
+</div>
+<h1 class="text-text-color dark:text-text-color-dark text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Buat Konten Baru</h1>
+<div class="flex w-12 items-center justify-end"></div>
+</header>
+<!-- Progress Indicator -->
+<div class="flex w-full flex-row items-center justify-center gap-3 py-4">
+<div class="flex flex-col items-center gap-2">
+<div class="h-3 w-3 rounded-full bg-primary"></div>
+<p class="text-primary text-xs font-semibold">Step 1</p>
+</div>
+<div class="w-16 h-0.5 bg-gray-200 dark:bg-gray-700"></div>
+<div class="flex flex-col items-center gap-2">
+<div class="h-3 w-3 rounded-full bg-gray-300 dark:bg-gray-600"></div>
+<p class="text-gray-400 dark:text-gray-500 text-xs font-normal">Step 2</p>
+</div>
+</div>
+<main class="flex-1 px-4">
+<!-- Section 1: Pilih Basis -->
+<section class="mb-6">
+<div class="bg-white dark:bg-[#2a2a2a] rounded-xl shadow-2dp p-5 bg-gradient-to-br from-secondary/20 to-transparent">
+<h2 class="text-text-color dark:text-text-color-dark text-lg font-bold leading-tight tracking-[-0.015em]">Langkah 1: Pilih Basis</h2>
+<p class="text-gray-500 dark:text-gray-400 text-base font-normal leading-normal pt-1 pb-4">Dari mana AI akan mengambil inspirasi?</p>
+<div class="grid grid-cols-2 gap-3">
+<button class="flex flex-col items-center justify-center gap-2 p-4 rounded-lg border-2 border-primary bg-primary/10 dark:bg-primary/20 text-primary">
+<span class="material-symbols-outlined !text-3xl">edit_square</span>
+<span class="text-text-color dark:text-text-color-dark text-sm font-semibold">Tulis Sendiri</span>
+</button>
+<button class="flex flex-col items-center justify-center gap-2 p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-background-dark hover:border-primary">
+<span class="material-symbols-outlined !text-3xl text-gray-500 dark:text-gray-400">link</span>
+<span class="text-text-color dark:text-text-color-dark text-sm font-semibold">Dari URL</span>
+</button>
+<button class="flex flex-col items-center justify-center gap-2 p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-background-dark hover:border-primary">
+<span class="material-symbols-outlined !text-3xl text-gray-500 dark:text-gray-400">sell</span>
+<span class="text-text-color dark:text-text-color-dark text-sm font-semibold">Dari Produk</span>
+</button>
+<button class="flex flex-col items-center justify-center gap-2 p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-background-dark hover:border-primary">
+<span class="material-symbols-outlined !text-3xl text-gray-500 dark:text-gray-400">image</span>
+<span class="text-text-color dark:text-text-color-dark text-sm font-semibold">Dari Gambar</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Section 2: Pilih Format -->
+<section class="mb-8">
+<div class="bg-white dark:bg-[#2a2a2a] rounded-xl shadow-2dp p-5 bg-gradient-to-br from-secondary/20 to-transparent">
+<h2 class="text-text-color dark:text-text-color-dark text-lg font-bold leading-tight tracking-[-0.015em]">Langkah 2: Pilih Format</h2>
+<p class="text-gray-500 dark:text-gray-400 text-base font-normal leading-normal pt-1 pb-4">Apa yang ingin kamu buat?</p>
+<div class="space-y-3">
+<button class="w-full flex items-center gap-4 p-4 rounded-lg border-2 border-transparent bg-background-light dark:bg-background-dark hover:border-primary focus:border-primary focus:bg-primary/10">
+<span class="material-symbols-outlined text-primary">article</span>
+<span class="text-text-color dark:text-text-color-dark font-semibold">Caption Media Sosial</span>
+</button>
+<button class="w-full flex items-center gap-4 p-4 rounded-lg border-2 border-primary bg-primary/10 dark:bg-primary/20">
+<span class="material-symbols-outlined text-primary">movie</span>
+<span class="text-text-color dark:text-text-color-dark font-semibold">Script Video Pendek</span>
+</button>
+<button class="w-full flex items-center gap-4 p-4 rounded-lg border-2 border-transparent bg-background-light dark:bg-background-dark hover:border-primary focus:border-primary focus:bg-primary/10">
+<span class="material-symbols-outlined text-primary">mail</span>
+<span class="text-text-color dark:text-text-color-dark font-semibold">Email Marketing</span>
+</button>
+<button class="w-full flex items-center gap-4 p-4 rounded-lg border-2 border-transparent bg-background-light dark:bg-background-dark hover:border-primary focus:border-primary focus:bg-primary/10">
+<span class="material-symbols-outlined text-primary">shopping_cart</span>
+<span class="text-text-color dark:text-text-color-dark font-semibold">Deskripsi Produk</span>
+</button>
+<button class="w-full flex items-center gap-4 p-4 rounded-lg border-2 border-transparent bg-background-light dark:bg-background-dark hover:border-primary focus:border-primary focus:bg-primary/10">
+<span class="material-symbols-outlined text-primary">draw</span>
+<span class="text-text-color dark:text-text-color-dark font-semibold">Artikel Blog</span>
+</button>
+</div>
+</div>
+</section>
+<!-- CTA Button -->
+<div class="fixed bottom-24 left-0 right-0 px-4 pb-4 pt-2 bg-background-light dark:bg-background-dark">
+<button class="w-full bg-accent text-white font-bold py-4 px-6 rounded-lg shadow-lg hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105">
+          Selanjutnya
+        </button>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 right-0 bg-white dark:bg-[#2a2a2a] shadow-[0_-2px_4px_rgba(0,0,0,0.05)] flex justify-around py-3 rounded-t-xl">
+<a class="flex flex-col items-center gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs">Beranda</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">collections_bookmark</span>
+<span class="text-xs">Perpustakaan</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">calendar_today</span>
+<span class="text-xs">Jadwal</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined">add_circle</span>
+<span class="text-xs font-bold">Buat</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">account_circle</span>
+<span class="text-xs">Akun</span>
+</a>
+</nav>
+</div>
+</body></html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Upload Visual Assets</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#5AB9B6",
+            "secondary": "#A3D4C9",
+            "accent": "#F6B26B",
+            "background-light": "#FAFAFA",
+            "background-dark": "#1E1E1E",
+            "text-color": "#1E1E1E",
+            "text-color-dark": "#FAFAFA",
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.75rem", // 12px
+            "lg": "1rem", // 16px
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+          boxShadow: {
+            'md': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-color dark:text-text-color-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="flex flex-col flex-1 pb-24">
+<header class="flex items-center p-4 pb-2 justify-between sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm z-10">
+<button class="flex size-10 shrink-0 items-center justify-center rounded-full">
+<span class="material-symbols-outlined text-text-color dark:text-text-color-dark">arrow_back</span>
+</button>
+<div class="flex flex-col items-center">
+<h2 class="text-lg font-bold tracking-tight">Langkah 2 dari 4</h2>
+<div class="flex w-full flex-row items-center justify-center gap-2 py-2">
+<div class="h-1.5 w-6 rounded-full bg-secondary"></div>
+<div class="h-1.5 w-6 rounded-full bg-primary"></div>
+<div class="h-1.5 w-6 rounded-full bg-secondary/50"></div>
+<div class="h-1.5 w-6 rounded-full bg-secondary/50"></div>
+</div>
+</div>
+<div class="size-10"></div>
+</header>
+<main class="flex-1 px-4 py-6">
+<div class="text-center">
+<h1 class="text-3xl font-bold tracking-tight">Unggah Aset Visual Anda</h1>
+<p class="mt-2 text-base text-text-color/80 dark:text-text-color-dark/80">Pilih 5 hingga 10 gambar terbaik yang mewakili produk atau layanan Anda.</p>
+</div>
+<div class="mt-8">
+<div class="flex flex-col items-center gap-6 rounded-xl border-2 border-dashed border-secondary px-6 py-12 shadow-inner bg-primary/10 dark:bg-primary/5">
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-5xl text-primary">cloud_upload</span>
+<p class="text-lg font-bold tracking-tight">Ketuk untuk mengunggah gambar</p>
+<p class="text-sm text-text-color/70 dark:text-text-color-dark/70">5-10 file</p>
+</div>
+</div>
+</div>
+<div class="mt-6 grid grid-cols-3 gap-4">
+<div class="relative group">
+<img class="aspect-square w-full rounded-lg object-cover" data-alt="A bottle of serum with a dropper" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcg16aH-KFTh16pnImAVy-3OdcNPOpXrJr6KkRf3HiQsEQcT0VKQWuZdSlsbhvjVVNtAcrUB-hcJgCMLGTa5q0fXlRERiwpibZLOPN5xysIlAVWcJxau773Dz4cqrYWQ9IzlQ2MJ3izgUkX1iCzLGO2T9y67LHP5Qwzo5LI1Hwz0JpIzy1qbln28VVdvHtYhRHx536XHay79mXDIMiTaRRQvc177aGy80DXc8kQz5pfIlvU3sr6b8MLunZXP3xcxcFOsuBjl1Zggbk"/>
+<button class="absolute top-1 right-1 bg-black/50 text-white rounded-full p-0.5 group-hover:opacity-100 opacity-0 transition-opacity">
+<span class="material-symbols-outlined text-base">close</span>
+</button>
+</div>
+<div class="relative group">
+<img class="aspect-square w-full rounded-lg object-cover" data-alt="A collection of cosmetic products on a pink background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU4rgtEAoz3W7S6oWpFHmzhQJN_jXLvqrQkVPaPmzpcLuiEpeytimllVu6_W2Vt6ic-KPQuAE8uJqn2NgQhT2LcEnYQDnRsDuR9O1kT-RGN-dLWHguPXRSaEsOmMY45rRleHG_el082uZGjmaSuu8Bg0lyPNMnzFCm1TfXXdMQkk8k9Dq1iRJLcLAR1e01g3_KgmgyFDDb4gJZkIJzmZFuhVhv8x2IbNdJCbLzBD5DO2zAf2GlCMfa6mUXHudanOJMmDAH0udhqDhh"/>
+<button class="absolute top-1 right-1 bg-black/50 text-white rounded-full p-0.5 group-hover:opacity-100 opacity-0 transition-opacity">
+<span class="material-symbols-outlined text-base">close</span>
+</button>
+</div>
+<div class="relative group">
+<img class="aspect-square w-full rounded-lg object-cover" data-alt="A pink tube of cream next to its box" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9ab2ZTBAmc-pDZgiYj35CunxPVA5Ij5rwaGUo7jo_kK_Md18ZerIDu8JfeN8dGbj3DYnRsYGN1mXjIVueg3b_EE8zo4hqYKPWF8bZreFN2JTw2td18L1woa-YqsTEPghfnCcFPjTatjSODHDWUwqqfcC0Zjg76A7kwNo__5Tf-WE9HXLpNSbCxUfcQxUnJ_ZOfGcx4I3vOmjgHK2Ql_jH7mI_SAjy99v4QJJ3uq1VMIUAJf8FeLwAYc1LhGm43SlznKnc8VBv3aJ_"/>
+<button class="absolute top-1 right-1 bg-black/50 text-white rounded-full p-0.5 group-hover:opacity-100 opacity-0 transition-opacity">
+<span class="material-symbols-outlined text-base">close</span>
+</button>
+</div>
+<div class="relative group">
+<img class="aspect-square w-full rounded-lg object-cover" data-alt="Two cosmetic bottles on a reflective surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7u8BuIHXX6ANNFCcB15kpirU9ap0-tRWKTsygcB29ixMIv_bAr-kcVQ3S3vm-YMT7fbPAVmKMGPZ8rRaQ2MRZs7qr0__Rdhp_fwgH9jz3EVfMhPWX_v5I3fadosshVn2rI-a4lTwT7omxvNgJ8EqOs9nTHy-3uDGmTq1bzJOuOGTwazGZ5iAmmQai1T-XfrFxlVNgYFCjUvo3ZVrKvOyUu7BVPESiqN3ej_oCn0ZUADN8B023lT_FUHiHf0gVcdQOz_yCq3KPSXdW"/>
+<button class="absolute top-1 right-1 bg-black/50 text-white rounded-full p-0.5 group-hover:opacity-100 opacity-0 transition-opacity">
+<span class="material-symbols-outlined text-base">close</span>
+</button>
+</div>
+<div class="relative group flex items-center justify-center aspect-square w-full rounded-lg bg-secondary/20 dark:bg-secondary/10">
+<div class="flex h-10 w-10 items-center justify-center rounded-full bg-background-light dark:bg-background-dark shadow-md">
+<svg class="h-6 w-6 animate-spin text-primary" fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+<path class="opacity-75" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" fill="currentColor"></path>
+</svg>
+</div>
+</div>
+</div>
+<div class="mt-8">
+<label class="text-lg font-bold tracking-tight">Unggah Logo (Opsional)</label>
+<div class="mt-2 flex items-center gap-4 rounded-xl border border-secondary p-4 bg-background-light dark:bg-background-dark shadow-sm">
+<div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-lg bg-secondary/20 dark:bg-secondary/10">
+<span class="material-symbols-outlined text-3xl text-primary">image</span>
+</div>
+<div class="flex-1">
+<p class="font-semibold text-text-color dark:text-text-color-dark">Belum ada logo</p>
+<p class="text-sm text-text-color/70 dark:text-text-color-dark/70">Ketuk untuk mengunggah</p>
+</div>
+<button class="flex h-10 min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-secondary/50 px-4 text-sm font-bold text-primary dark:bg-secondary/30">
+<span class="truncate">Unggah</span>
+</button>
+</div>
+</div>
+</main>
+</div>
+<footer class="fixed bottom-0 left-0 right-0 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-lg border-t border-secondary/50 dark:border-secondary/20 shadow-md">
+<div class="px-4 pt-4 pb-2">
+<button class="w-full h-12 rounded-lg bg-primary text-white text-base font-bold shadow-md hover:bg-primary/90 transition-colors disabled:bg-secondary/50 disabled:text-text-color/50">
+          Selanjutnya
+        </button>
+</div>
+<nav class="flex justify-around py-2">
+<a class="flex flex-col items-center gap-1 text-text-color/60 dark:text-text-color-dark/60" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs">Beranda</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-text-color/60 dark:text-text-color-dark/60" href="#">
+<span class="material-symbols-outlined">collections_bookmark</span>
+<span class="text-xs">Perpustakaan</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-text-color/60 dark:text-text-color-dark/60" href="#">
+<span class="material-symbols-outlined">calendar_today</span>
+<span class="text-xs">Jadwal</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary dark:text-primary" href="#">
+<div class="relative">
+<span class="material-symbols-outlined">add_box</span>
+<span class="absolute -top-1 -right-1 flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
+</span>
+</div>
+<span class="text-xs font-bold">Buat</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-text-color/60 dark:text-text-color-dark/60" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-xs">Akun</span>
+</a>
+</nav>
+</footer>
+</div>
+</body></html>

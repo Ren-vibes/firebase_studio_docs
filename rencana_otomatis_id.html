@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Plan Details</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#5AB9B6",
+            "secondary": "#A3D4C9",
+            "accent": "#F6B26B",
+            "background-light": "#FAFAFA",
+            "background-dark": "#1E1E1E",
+            "text-primary": "#1E1E1E",
+            "text-secondary": "#5B5B5B"
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.75rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+          boxShadow: {
+            'md': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1)',
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-primary dark:text-background-light">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Top App Bar -->
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10">
+<button class="flex items-center justify-center size-10 rounded-full text-text-primary dark:text-background-light">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h2 class="text-text-primary dark:text-background-light text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Detail Rencana</h2>
+<div class="w-10"></div>
+</div>
+<main class="flex-1 flex flex-col p-4">
+<!-- Plan Summary Card -->
+<div class="p-4 @container flex-grow">
+<div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start shadow-md bg-white dark:bg-[#2c2c2c] bg-gradient-to-br from-secondary/20 to-white dark:from-secondary/10 dark:to-[#2c2c2c]">
+<div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-4 p-4">
+<div class="flex justify-between items-start">
+<div>
+<p class="text-text-secondary dark:text-gray-400 text-sm font-normal leading-normal">Nama Rencana</p>
+<p class="text-text-primary dark:text-background-light text-xl font-bold leading-tight tracking-[-0.015em]">Tips Bisnis</p>
+</div>
+<div class="flex items-center gap-2">
+<img class="h-6 w-6" data-alt="Instagram logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0Q9RdNTyBdhM_V2DFqjv4xxa6-IAdR3ttfg9zQFihE1kW3SZ-Ktr744m6ulw-agVWhZR_T8OHJYupNWwqhxOd5egpOgqy4BI5cf7djkpI3_ZBVN73vhY4KZNVxmWn6D62KBn8X08matsbKEuLFB7jHPnpspNxksSpxsstPl9VVjufEa3v9T_hJaPi5FzOyYkS38w-hfLXcyyRvf6tg84PTfqslxxhbYWOwDCHCbiXNukrWT5cLUITaMaQyZH8ynITtIUKRknaBBpf"/>
+<img class="h-6 w-6" data-alt="Facebook logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMWPksgx9KXAFETbSemX6x5ElX-U9PWTiJyr0_E1itF5oUmp4e_8CHGcQjqgl9HR8yVvo2OMs6MTkfe9_OxN5g853IPOeTsq52x-mO6eFv2HR9sbd4NW0eTsA542kL4QJIy81Uay6aKisg0JDlyn6Lsaj2lj8S86xxngWnwFHZrb-lh9COM4y2_beT-vI4_Wg0ZYhoB8jQcmocXa3qe_Fadx5FBuBX184sSEB8rvrKJ8m-iaFK4iXYChWIfcnT2YsNspiOsnMTmtJq"/>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex flex-col gap-1">
+<p class="text-text-secondary dark:text-gray-400 text-sm font-normal leading-normal">Status</p>
+<p class="text-primary text-base font-bold leading-normal">Aktif</p>
+</div>
+<div class="text-right">
+<p class="text-text-secondary dark:text-gray-400 text-sm font-normal leading-normal">Tipe Konten</p>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-accent/20 text-accent text-sm font-medium leading-normal mt-1">
+<span class="truncate">Promosi Produk</span>
+</button>
+</div>
+</div>
+<div>
+<p class="text-text-secondary dark:text-gray-400 text-sm font-normal leading-normal">Frekuensi</p>
+<p class="text-text-primary dark:text-background-light text-base font-medium leading-normal">Setiap Senin, Rabu, Jumat pukul 09:00</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Action Buttons -->
+<div class="px-4 pb-4 space-y-3">
+<div class="flex px-4 py-3">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-5 flex-1 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] shadow-md">
+<span class="truncate">Jeda Rencana</span>
+</button>
+</div>
+<div class="flex px-4 py-0">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-5 flex-1 bg-secondary/30 dark:bg-secondary/20 text-primary dark:text-primary-light text-base font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Edit Rencana</span>
+</button>
+</div>
+</div>
+<!-- Bottom Navigation Bar -->
+<div class="flex gap-2 border-t border-gray-200 dark:border-gray-700 bg-background-light dark:bg-background-dark px-4 pb-3 pt-2 sticky bottom-0 z-10">
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-text-secondary dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">home</span>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Beranda</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-text-secondary dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">import_contacts</span>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Perpustakaan</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 rounded-full text-primary" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">calendar_today</span>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Jadwal</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-text-secondary dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">add_circle</span>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Buat</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-text-secondary dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">person</span>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Akun</p>
+</a>
+</div>
+</div>
+</body></html>

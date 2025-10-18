@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Masuk ke KonKit</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#5AB9B6",
+                        "secondary": "#A3D4C9",
+                        "accent": "#F6B26B",
+                        "background-light": "#FAFAFA",
+                        "background-dark": "#1E1E1E",
+                        "text-light": "#1E1E1E",
+                        "text-dark": "#FAFAFA",
+                        "border-light": "#CCCCCC",
+                        "border-dark": "#4A4A4A"
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.75rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05)',
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col items-center justify-center bg-background-light dark:bg-background-dark p-4 group/design-root overflow-x-hidden">
+<div class="w-full max-w-md space-y-6">
+<div class="text-center">
+<h1 class="text-3xl font-bold tracking-tight text-text-light dark:text-text-dark">Masuk ke KonKit</h1>
+<p class="mt-2 text-base text-text-light/80 dark:text-text-dark/80">Selamat datang kembali! Masuk untuk melanjutkan.</p>
+</div>
+<div class="space-y-3">
+<button class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-white dark:bg-background-dark border border-border-light dark:border-border-dark shadow-soft text-text-light dark:text-text-dark gap-3 text-base font-bold leading-normal tracking-[0.015em] hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+<svg class="h-6 w-6" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-1.5c-.83 0-1.5.67-1.5 1.5V12h3l-.5 3h-2.5v6.8c4.56-.93 8-4.96 8-9.8z"></path></svg>
+<span class="truncate">Lanjutkan dengan Google</span>
+</button>
+<button class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-white dark:bg-background-dark border border-border-light dark:border-border-dark shadow-soft text-text-light dark:text-text-dark gap-3 text-base font-bold leading-normal tracking-[0.015em] hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+<svg class="h-6 w-6" fill="currentColor" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M12.152 6.896c-.948 0-1.896.48-2.58 1.224-.684.744-1.224 1.824-1.224 2.904 0 1.2.54 2.256 1.224 2.976.684.72 1.632 1.152 2.58 1.152.948 0 1.896-.432 2.58-1.152.684-.72 1.224-1.776 1.224-2.976 0-1.08-.54-2.16-1.224-2.904-.684-.744-1.632-1.224-2.58-1.224M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.008 17.52c.648.024 1.08-.432.648-.864-.432-.432-.864-.96-1.08-1.56-.456-1.224-.216-2.904.864-3.528.432-.24.96-.36 1.584-.36.96 0 1.896.456 2.58 1.176.684.72 1.224 1.776 1.224 2.952 0 1.104-.48 2.088-1.128 2.712-.648.624-1.488.984-2.352 1.008-.096 0-.216 0-.24 0a11.16 11.16 0 0 1-2.16-.576zm2.856-12.288c-.648-.624-1.512-.984-2.4-.984-.12 0-.24 0-.36.024-2.16.216-3.336 2.16-3.336 4.152 0 1.224.432 2.376 1.224 3.168.792.792 1.848 1.248 3.024 1.248.12 0 .24 0 .36-.024 2.16-.216 3.336-2.184 3.336-4.176 0-1.632-.816-3.024-2.064-3.816-.36-.216-.744-.36-1.152-.384z"></path></svg>
+<span class="truncate">Lanjutkan dengan Apple</span>
+</button>
+</div>
+<div class="flex items-center">
+<hr class="w-full border-t border-border-light dark:border-border-dark"/>
+<p class="px-4 text-sm font-normal text-text-light/60 dark:text-text-dark/60">ATAU</p>
+<hr class="w-full border-t border-border-light dark:border-border-dark"/>
+</div>
+<form class="space-y-4">
+<div>
+<label class="block text-sm font-medium text-text-light dark:text-text-dark mb-1" for="email">Email</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute inset-y-0 left-0 flex items-center pl-3 text-text-light/50 dark:text-text-dark/50">mail</span>
+<input class="w-full rounded-lg h-12 pl-10 pr-4 bg-white dark:bg-background-dark border border-border-light dark:border-border-dark focus:ring-2 focus:ring-secondary dark:focus:ring-secondary/50 focus:border-transparent shadow-soft" id="email" name="email" placeholder="Masukkan email Anda" type="email"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-text-light dark:text-text-dark mb-1" for="password">Password</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute inset-y-0 left-0 flex items-center pl-3 text-text-light/50 dark:text-text-dark/50">lock</span>
+<input class="w-full rounded-lg h-12 pl-10 pr-10 bg-white dark:bg-background-dark border border-border-light dark:border-border-dark focus:ring-2 focus:ring-secondary dark:focus:ring-secondary/50 focus:border-transparent shadow-soft" id="password" name="password" placeholder="Masukkan password Anda" type="password"/>
+<button class="absolute inset-y-0 right-0 flex items-center pr-3 text-text-light/50 dark:text-text-dark/50" type="button">
+<span class="material-symbols-outlined">visibility</span>
+</button>
+</div>
+</div>
+<button class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white shadow-soft text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors" type="submit">
+                    Masuk
+                </button>
+</form>
+<div class="text-center">
+<p class="text-xs text-text-light/60 dark:text-text-dark/60">
+                    Dengan melanjutkan, Anda menyetujui <a class="font-medium text-primary hover:underline" href="#">Ketentuan Layanan</a> dan <a class="font-medium text-primary hover:underline" href="#">Kebijakan Privasi</a> kami.
+                </p>
+</div>
+</div>
+</div>
+</body></html>

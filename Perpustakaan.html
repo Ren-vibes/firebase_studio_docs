@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AI Content Assistant</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#5AB9B6",
+                        "secondary": "#A3D4C9",
+                        "accent": "#F6B26B",
+                        "background-light": "#FAFAFA",
+                        "background-dark": "#1E1E1E",
+                        "text-primary": "#1E1E1E",
+                        "text-secondary": "#555555"
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.75rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    boxShadow: {
+                        'md': '0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)',
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-primary dark:text-background-light">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="sticky top-0 z-10 bg-gradient-to-b from-primary/20 to-background-light/0 dark:from-primary/30 dark:to-background-dark/0 pt-4">
+<div class="flex items-center bg-transparent px-4 pb-2 justify-between">
+<span class="material-symbols-outlined text-text-primary dark:text-background-light text-3xl">menu</span>
+<h1 class="text-text-primary dark:text-background-light text-xl font-bold">Perpustakaan</h1>
+<span class="material-symbols-outlined text-text-primary dark:text-background-light text-3xl">search</span>
+</div>
+<div class="pb-3">
+<div class="flex border-b border-gray-200 dark:border-gray-700 px-4 gap-8">
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-primary text-primary pb-[13px] pt-4 flex-1" href="#">
+<p class="text-primary text-sm font-bold tracking-[0.015em]">Gambar</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-text-secondary dark:text-gray-400 pb-[13px] pt-4 flex-1" href="#">
+<p class="text-sm font-bold tracking-[0.015em]">Naskah</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-text-secondary dark:text-gray-400 pb-[13px] pt-4 flex-1" href="#">
+<p class="text-sm font-bold tracking-[0.015em]">Video</p>
+</a>
+</div>
+</div>
+</div>
+<div class="flex gap-3 p-4 overflow-x-auto">
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-secondary/30 dark:bg-secondary/20 px-4 shadow-sm">
+<p class="text-text-primary dark:text-background-light text-sm font-medium">Basis</p>
+<span class="material-symbols-outlined text-text-primary dark:text-background-light text-lg">expand_more</span>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-secondary/30 dark:bg-secondary/20 px-4 shadow-sm">
+<p class="text-text-primary dark:text-background-light text-sm font-medium">Tipe</p>
+<span class="material-symbols-outlined text-text-primary dark:text-background-light text-lg">expand_more</span>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-secondary/30 dark:bg-secondary/20 px-4 shadow-sm">
+<p class="text-text-primary dark:text-background-light text-sm font-medium">Tanggal</p>
+<span class="material-symbols-outlined text-text-primary dark:text-background-light text-lg">expand_more</span>
+</button>
+</div>
+<main class="flex-grow p-4">
+<div class="grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-4">
+<div class="flex flex-col gap-3 pb-3 rounded-lg shadow-md bg-white dark:bg-gray-800 overflow-hidden">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover" data-alt="Abstract gradient of teal and orange" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAF5wfOrUJKlouvj0wOiiUbKqlDU9EKxl7Os3Ude-kVv3OpkUf_oWZUxbw-twZB7t_FiU_gxUGKNK4MNI-QmCGjqMaaZp4XL3RSuubajn7IW_yfc7NOfOXMWtfzMRmD97_059FtiS2M4j1tyxz1r9s4OJrr2i-D9sVMFOz1ZtWQ_R3BxNIAjO-PLRg4JiPHJzHBqtf9hm6-ckPl9sFFrraxOxbaBcRbXrTfqFLRUEpeN5RyhGYlZhZTcEzmSwLxR_jo2gjMYVSz-yNd");'></div>
+<div class="px-3">
+<p class="text-text-primary dark:text-background-light text-base font-medium leading-normal">Gambar produk</p>
+<p class="text-text-secondary dark:text-gray-400 text-sm font-normal leading-normal">Dibuat pada 12 Mei 2023</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 rounded-lg shadow-md bg-white dark:bg-gray-800 overflow-hidden">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover" data-alt="Pastel colored geometric shapes" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBjF07jERRChUXi8qBN8YFM1ImVKjDYn_lXCMDg85FKiUn74Xsl8xZxx3mEqNwwDEw70U_8vO_l3sYwWAuDi0xM7GFzXdZ-CDIjGs_l1xF3tklX0D18bVlhgnvIb22y-egw60N_Zlcb4s1Zn3Me0YDckg3wmc5lJjR-6T8NdiYOJ7DFGN1Bok_42nkhbCPdF5B344agey3OANcziBiAr3zKs0ksi7uYHW3ftI3fI_M2qAfz5TyfBExLmhZke06fXPYcbrb2xhGsOtgG");'></div>
+<div class="px-3">
+<p class="text-text-primary dark:text-background-light text-base font-medium leading-normal">Postingan media sosial</p>
+<p class="text-text-secondary dark:text-gray-400 text-sm font-normal leading-normal">Dibuat pada 11 Mei 2023</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 rounded-lg shadow-md bg-white dark:bg-gray-800 overflow-hidden">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover" data-alt="Soft orange and pink blurred background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAM5BjaU1LXfxR0ptN8DTBUJg2oWa7ljILqjXHKGltX2_hKf_o7dup7G6Z0ww7YH42U6Vn6OJ0GHDkfYY50Q1tNzXgZLiHBX2s7PgyOlDY4qdlLIUYrMZKokvoXnYiF2JQGtYCDVrukxfZisZK_UhpgATENuyOn6HXBQlz8TwlAEmxK8poEhu-5WoBAabzzotTGGiFBrD2-uXwHbnWxYJuEwPwg0-EVLHmZuX4oeGJTSdwYG94QfVvwt2pGHGgOd19PR_BbFOQ4qavl");'></div>
+<div class="px-3">
+<p class="text-text-primary dark:text-background-light text-base font-medium leading-normal">Infografis</p>
+<p class="text-text-secondary dark:text-gray-400 text-sm font-normal leading-normal">Dibuat pada 10 Mei 2023</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 rounded-lg shadow-md bg-white dark:bg-gray-800 overflow-hidden">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover" data-alt="Light teal textured background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCTv1ywCTzVtBx1vZG99KgHxqG4z4vIkk8sITDnU65vfQQ6OZGjolG-L0HuhjMDbxlOEVrhRB2vrDuRTAOO12CfP-ktyLR3X4Kz69LsCMdJ4pWUm4nTkJ3tPB4HxaW_AWl0tLtOs61tzewn8-WQelAl2nFKDp-jMLROk-jikyVjaqWZUAuHkv_3s1wjJqu4TogckXPpHYu35WOn0Q8EOY_hoB9IXM1tFpNPGeT7UsCQVVQH3wzADkCZqCJVw6_wwMbHRGA8Hx1qJ12W");'></div>
+<div class="px-3">
+<p class="text-text-primary dark:text-background-light text-base font-medium leading-normal">Spanduk situs web</p>
+<p class="text-text-secondary dark:text-gray-400 text-sm font-normal leading-normal">Dibuat pada 9 Mei 2023</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 rounded-lg shadow-md bg-white dark:bg-gray-800 overflow-hidden">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover" data-alt="A gentle mix of mint and peach colors" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC9iOgHwr-LFyn28rP1CHw6NKnlGSfU5pCfA0wUFRCYuMoGWKor0q6f5CvuUsKtwcKXOUpxdH_tac0w4QbHqZyQKXgFLg3AvnCmlbL24xUR0Mxw19UO5t8N8XKworsYrBXJIwY5l0lAER0nyoLG5BqOYCI8lYeRjSSd7g1Zt9Q-gqpC3ir_5pegugX3_jr6Oh6IaErNaxUaXs7s3PItGT-vyKJC0fcjz77pYIioCdZ7n-glF-zc9ezX9aXMZ1WZjeRoed6E5PET0_9b");'></div>
+<div class="px-3">
+<p class="text-text-primary dark:text-background-light text-base font-medium leading-normal">Materi iklan</p>
+<p class="text-text-secondary dark:text-gray-400 text-sm font-normal leading-normal">Dibuat pada 8 Mei 2023</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 rounded-lg shadow-md bg-white dark:bg-gray-800 overflow-hidden">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover" data-alt="Vibrant orange and yellow gradient" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCBlWv7VorCiJIuVvluqrUN6xfFP_Lhhqk7GW3rSxRF6UObuIw3l-COOiSblLFXyWylR5ycOsLM-A1yIlN7vjcTJDe13-RUZoIvwHUa3EJHqB-rpDNt5ITLLy0pKPwOU2ifxiJeUUhH2RZlm-K7mcSG0X_xLvsUTNg-iBJBqgG8hYbya2GBNSrsOWoLtkC-xcD09z7dV0SMqoy407jTAH9NmK3_H8Sc1IfoZPqXbMyzLB7xjDGBDYBWq1e9S_booAnuV57rG2GIOJJM");'></div>
+<div class="px-3">
+<p class="text-text-primary dark:text-background-light text-base font-medium leading-normal">Presentasi</p>
+<p class="text-text-secondary dark:text-gray-400 text-sm font-normal leading-normal">Dibuat pada 7 Mei 2023</p>
+</div>
+</div>
+</div>
+<!-- Preview Modal -->
+<div class="fixed inset-0 bg-black/50 dark:bg-black/70 flex items-center justify-center z-50 opacity-0 pointer-events-none group-focus-within/design-root:opacity-100 group-focus-within/design-root:pointer-events-auto transition-opacity duration-300">
+<div class="bg-background-light dark:bg-gray-800 rounded-xl shadow-lg w-11/12 max-w-md m-4 flex flex-col max-h-[90vh]">
+<div class="p-4 border-b border-gray-200 dark:border-gray-700">
+<h2 class="text-lg font-bold text-text-primary dark:text-background-light">Pratinjau Gambar</h2>
+<p class="text-sm text-text-secondary dark:text-gray-400">Postingan media sosial</p>
+</div>
+<div class="p-4 flex-grow overflow-y-auto">
+<img class="rounded-lg w-full h-auto" data-alt="Pastel colored geometric shapes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZ-o_xxYTPI3ke_g-f9_1Lh6zOlercV3VUJQr2aAgQ8U-bNlH4ffYFFTMmNybWxDeeFLUwRYzSru1weXjIcC1n8QaJBZK_BPfj4zDpGpXfPoM6dDubqWZEJhSHrrsmLKrZr3hit59ANTPKnUvp26juzwgkmZzZnF7Mb4IRcM_FPh9DJFD1rzkx7Cy-3x4p4gjyeNI3P-nJyu1ur-W9qYaf6ZxiCLxeb390cd6Vb5rHQVzlrYwDNdfiGFRqVyiJnbc0GZCUXoCQqJT_"/>
+<div class="mt-4 space-y-1">
+<p class="text-text-primary dark:text-background-light"><span class="font-semibold">Tanggal:</span> 11 Mei 2023</p>
+<p class="text-text-primary dark:text-background-light"><span class="font-semibold">Tipe:</span> Post Instagram</p>
+<p class="text-text-primary dark:text-background-light"><span class="font-semibold">Dimensi:</span> 1080x1080px</p>
+</div>
+</div>
+<div class="p-4 border-t border-gray-200 dark:border-gray-700 flex flex-col sm:flex-row gap-2">
+<button class="w-full flex h-12 items-center justify-center gap-x-2 rounded-lg bg-primary text-white font-bold text-base shadow-md hover:bg-primary/90 transition-colors">
+<span class="material-symbols-outlined">download</span>Unduh
+                        </button>
+<button class="w-full sm:w-auto flex h-12 items-center justify-center gap-x-2 rounded-lg bg-accent text-white px-4 font-bold text-base shadow-md hover:bg-accent/90 transition-colors">
+<span class="material-symbols-outlined">share</span>
+</button>
+<button class="w-full sm:w-auto flex h-12 items-center justify-center gap-x-2 rounded-lg bg-gray-200 dark:bg-gray-600 text-text-primary dark:text-background-light px-4 font-bold text-base shadow-md hover:bg-gray-300 dark:hover:bg-gray-500 transition-colors">
+<span class="material-symbols-outlined">delete</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<footer class="sticky bottom-0 z-10">
+<div class="flex border-t border-gray-200 dark:border-gray-700 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-sm px-2 pb-2 pt-2">
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-text-secondary dark:text-gray-400" href="#">
+<span class="material-symbols-outlined text-2xl">home</span>
+<p class="text-xs font-medium tracking-[0.015em]">Beranda</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 rounded-full text-primary" href="#">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">photo_library</span>
+<p class="text-primary text-xs font-bold tracking-[0.015em]">Perpustakaan</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-text-secondary dark:text-gray-400" href="#">
+<span class="material-symbols-outlined text-2xl">calendar_month</span>
+<p class="text-xs font-medium tracking-[0.015em]">Jadwal</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-text-secondary dark:text-gray-400" href="#">
+<span class="material-symbols-outlined text-2xl">add_circle</span>
+<p class="text-xs font-medium tracking-[0.015em]">Buat</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-text-secondary dark:text-gray-400" href="#">
+<span class="material-symbols-outlined text-2xl">person</span>
+<p class="text-xs font-medium tracking-[0.015em]">Akun</p>
+</a>
+</div>
+</footer>
+</div>
+</body></html>

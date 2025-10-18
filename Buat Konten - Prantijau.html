@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Post Preview</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#5AB9B6",
+            "secondary": "#A3D4C9",
+            "accent": "#F6B26B",
+            "background-light": "#FAFAFA",
+            "background-dark": "#1E1E1E",
+            "text-primary": "#1E1E1E",
+            "text-secondary": "#FFFFFF"
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "Noto Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+          boxShadow: {
+            'md': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1)',
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-primary dark:text-text-secondary">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="flex-grow pb-28">
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10">
+<div class="flex size-12 shrink-0 items-center">
+<span class="material-symbols-outlined text-text-primary dark:text-text-secondary" style="font-size: 24px;">arrow_back</span>
+</div>
+<h2 class="text-text-primary dark:text-text-secondary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Pratinjau Postingan</h2>
+<div class="flex w-12 items-center justify-end"></div>
+</div>
+<div class="p-4 @container">
+<div class="flex flex-col items-stretch justify-start rounded-xl shadow-md bg-background-light dark:bg-background-dark">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-t-xl" data-alt="A tranquil image of a tropical beach at sunset, with palm trees silhouetted against a colorful sky." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCpO_kVoLxvmbMDookrHCmh45Xryrm2vKpK9Rk9a87N6zxOsC8Wyq_W-iEP2iXfBDYUhRB3SOa20OOngShQPPB2IPmj2o2J3ZfPYC14nc5HgowaFCYww-L00UkXeqbCAENUk2XtgJFlAE_KGTASe2ZELPAcMVKiI7jq1wMzO5fIyshjWNSRk-tJVglQPc0yw1NrQ3zO6waw1qB5l4PeExbKA1rkJ1ISy3PeurHedblurk6edwc5Nj5uo83IV1Y8wR_iCMQhJTanrMEC");'></div>
+<div class="flex w-full grow flex-col items-stretch justify-center gap-2 p-4">
+<p class="text-text-primary dark:text-text-secondary text-lg font-bold leading-tight tracking-[-0.015em]">Caption Postingan Anda di Sini</p>
+<p class="text-text-primary/70 dark:text-text-secondary/70 text-base font-normal leading-normal">Ini adalah deskripsi postingan Anda. Anda bisa menambahkan detail lebih lanjut atau tagar di sini. #travel #beachlife #sunset</p>
+</div>
+</div>
+</div>
+<div class="px-4 space-y-4">
+<div class="flex items-center gap-4 bg-background-light dark:bg-background-dark min-h-14 rounded-lg shadow-md p-4">
+<div class="text-primary flex items-center justify-center rounded-lg bg-secondary/30 shrink-0 size-10">
+<span class="material-symbols-outlined" style="font-size: 24px;">paid</span>
+</div>
+<p class="text-text-primary dark:text-text-secondary text-base font-normal leading-normal flex-1 truncate">Biaya: 50 Kredit</p>
+</div>
+<div class="bg-background-light dark:bg-background-dark rounded-lg shadow-md p-4">
+<div class="flex items-center gap-4 justify-between">
+<div class="flex items-center gap-4">
+<div class="text-primary flex items-center justify-center rounded-lg bg-secondary/30 shrink-0 size-10">
+<span class="material-symbols-outlined" style="font-size: 24px;">calendar_month</span>
+</div>
+<p class="text-text-primary dark:text-text-secondary text-base font-normal leading-normal flex-1 truncate">Jadwalkan Postingan</p>
+</div>
+<div class="shrink-0">
+<label class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none bg-secondary/50 p-0.5 has-[:checked]:justify-end has-[:checked]:bg-primary">
+<input class="peer sr-only" type="checkbox"/>
+<div class="h-full w-[27px] rounded-full bg-white transition-transform peer-checked:translate-x-full" style="box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px, rgba(0, 0, 0, 0.06) 0px 3px 1px;"></div>
+</label>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fixed bottom-0 left-0 right-0 bg-background-light dark:bg-background-dark p-4 border-t border-gray-200 dark:border-gray-700">
+<button class="flex w-full max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-5 bg-primary text-text-secondary text-base font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Publikasikan</span>
+</button>
+<div class="flex justify-around items-center pt-4">
+<a class="flex flex-col items-center text-primary" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs">Beranda</span>
+</a>
+<a class="flex flex-col items-center text-text-primary/70 dark:text-text-secondary/70" href="#">
+<span class="material-symbols-outlined">photo_library</span>
+<span class="text-xs">Perpustakaan</span>
+</a>
+<a class="flex flex-col items-center text-text-primary/70 dark:text-text-secondary/70" href="#">
+<span class="material-symbols-outlined">schedule</span>
+<span class="text-xs">Jadwal</span>
+</a>
+<a class="flex flex-col items-center text-text-primary/70 dark:text-text-secondary/70" href="#">
+<span class="material-symbols-outlined">add_circle</span>
+<span class="text-xs">Buat</span>
+</a>
+<a class="flex flex-col items-center text-text-primary/70 dark:text-text-secondary/70" href="#">
+<span class="material-symbols-outlined">account_circle</span>
+<span class="text-xs">Akun</span>
+</a>
+</div>
+</div>
+</div>
+</body></html>

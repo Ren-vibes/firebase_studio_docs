@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>KonKit Welcome</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#5AB9B6",
+            "secondary": "#A3D4C9",
+            "accent": "#F6B26B",
+            "background-light": "#FAFAFA",
+            "background-dark": "#1E1E1E",
+            "text-light": "#1E1E1E",
+            "text-dark": "#FAFAFA",
+          },
+          fontFamily: {
+            display: ["Nunito Sans", "Plus Jakarta Sans", "sans-serif"],
+          },
+          borderRadius: {
+            "DEFAULT": "0.75rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+          boxShadow: {
+            '2dp': '0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12)',
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      font-family: 'Nunito Sans', sans-serif;
+    }
+    .font-nunito-bold {
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: 800;
+    }
+    .font-nunito-regular {
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: 400;
+    }
+    .font-nunito-semibold {
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: 600;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark">
+<div class="relative flex h-screen min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="flex flex-col h-full p-4">
+<div class="flex-grow flex flex-col items-center justify-center pt-16">
+<div class="w-full max-w-xs flex flex-col items-center">
+<div class="flex w-full grow bg-background-light dark:bg-background-dark @container p-4">
+<div class="w-full gap-1 overflow-hidden @[480px]:gap-2 aspect-[1/1] rounded-full flex">
+<div class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-none flex-1" data-alt="AI swirl logo with mint-teal and coral gradient" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDg-E1yZM6EsDN6TvtSYgwaGmveMYeWbng1S9Let6TU7kT3_uNd1w9kwPcQIWa0kvTrjPOsQxsvlFZVRHwhXqKFD7fka2JOoQ_CLEZAEvl2r3Hioe-qyaQ2GiKkD7MyPXGAb8wXtAhxQyOuxEbQ02im3Aeki0S8fcp9oVcjgpPbHOeyfjNQEFbaDVgIMb9VBKqjiSftW9e9f_2K2feengyNw_n0L9Ajni5D5Khxoqud-tpFGO6rsMZnZBPKaot26lyO9mQwOox7tZiT"); background-blend-mode: multiply; background-color: rgba(246, 178, 107, 0.5); background-position: center; background-size: cover; border-radius: 9999px;'></div>
+</div>
+</div>
+<h1 class="font-nunito-bold text-5xl text-text-light dark:text-text-dark mt-4">KonKit</h1>
+<p class="text-text-light dark:text-text-dark text-lg font-nunito-semibold text-center mt-4">Stay visible, even when you're busy.</p>
+</div>
+</div>
+<div class="flex flex-col items-center space-y-4 pb-8">
+<div class="flex px-4 py-3 w-full max-w-xs">
+<div class="flex h-12 flex-1 items-center justify-center rounded-lg bg-gray-200 dark:bg-gray-800 p-1">
+<label class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-md px-2 has-[:checked]:bg-primary has-[:checked]:shadow-2dp has-[:checked]:text-white text-text-light/60 dark:text-text-dark/60 text-sm font-nunito-semibold">
+<span class="truncate">Indonesia</span>
+<input checked="" class="invisible w-0" name="language-toggle" type="radio" value="Indonesia"/>
+</label>
+<label class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-md px-2 has-[:checked]:bg-primary has-[:checked]:shadow-2dp has-[:checked]:text-white text-text-light/60 dark:text-text-dark/60 text-sm font-nunito-semibold">
+<span class="truncate">English</span>
+<input class="invisible w-0" name="language-toggle" type="radio" value="English"/>
+</label>
+</div>
+</div>
+<div class="flex px-4 py-3 justify-center w-full max-w-xs">
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-14 px-5 flex-1 bg-primary text-white text-xl font-nunito-bold tracking-[0.015em] shadow-2dp hover:opacity-90 transition-opacity">
+<span class="truncate">Masuk</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</body></html>

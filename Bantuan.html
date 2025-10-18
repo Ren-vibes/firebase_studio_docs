@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AI Content Assistant - Help &amp; Support</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#5AB9B6",
+              "secondary": "#A3D4C9",
+              "accent": "#F6B26B",
+              "background-light": "#FAFAFA",
+              "background-dark": "#1E1E1E",
+              "text-color": "#1E1E1E",
+              "text-dark": "#FAFAFA"
+            },
+            fontFamily: {
+              "display": ["Plus Jakarta Sans", "Noto Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.75rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+            boxShadow: {
+              'md': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1)',
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-color dark:text-text-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden pb-24">
+<!-- Top App Bar -->
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10">
+<h1 class="text-text-color dark:text-text-dark text-xl font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Bantuan &amp; Dukungan</h1>
+</div>
+<!-- Search Bar -->
+<div class="px-4 py-3">
+<label class="flex flex-col min-w-40 h-14 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full shadow-md bg-white dark:bg-gray-800">
+<div class="text-primary flex items-center justify-center pl-4">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-color dark:text-text-dark focus:outline-0 focus:ring-0 border-none bg-white dark:bg-gray-800 h-full placeholder:text-gray-400 dark:placeholder:text-gray-500 px-4 pl-2 text-base font-normal leading-normal" placeholder="Cari di FAQ..." value=""/>
+</div>
+</label>
+</div>
+<!-- FAQ Section -->
+<h2 class="text-text-color dark:text-text-dark text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Pertanyaan yang Sering Diajukan</h2>
+<div class="grid grid-cols-2 gap-4 px-4">
+<details class="flex flex-col rounded-lg bg-secondary/30 dark:bg-secondary/20 px-4 py-2 group shadow-md transition-all duration-300 ease-in-out">
+<summary class="flex cursor-pointer items-center justify-between gap-4 py-3">
+<p class="text-text-color dark:text-text-dark text-sm font-medium leading-normal">Bagaimana cara kerja AI?</p>
+<div class="text-primary group-open:rotate-180 transition-transform duration-300">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</summary>
+<p class="text-text-color/70 dark:text-text-dark/70 text-sm font-normal leading-normal pb-3 transition-all duration-300 ease-in-out">
+                AI kami menggunakan model bahasa canggih untuk menghasilkan konten berkualitas tinggi berdasarkan masukan Anda. Cukup berikan topik atau kata kunci, dan AI akan membuat draf untuk Anda.
+            </p>
+</details>
+<details class="flex flex-col rounded-lg bg-secondary/30 dark:bg-secondary/20 px-4 py-2 group shadow-md transition-all duration-300 ease-in-out">
+<summary class="flex cursor-pointer items-center justify-between gap-4 py-3">
+<p class="text-text-color dark:text-text-dark text-sm font-medium leading-normal">Bagaimana cara membuat konten baru?</p>
+<div class="text-primary group-open:rotate-180 transition-transform duration-300">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</summary>
+<p class="text-text-color/70 dark:text-text-dark/70 text-sm font-normal leading-normal pb-3 transition-all duration-300 ease-in-out">
+                Untuk membuat konten baru, navigasikan ke tab 'Buat' dan pilih jenis konten yang Anda inginkan. Ikuti petunjuk untuk memberikan detail, dan AI akan menghasilkan konten untuk Anda.
+            </p>
+</details>
+<details class="flex flex-col rounded-lg bg-secondary/30 dark:bg-secondary/20 px-4 py-2 group shadow-md transition-all duration-300 ease-in-out">
+<summary class="flex cursor-pointer items-center justify-between gap-4 py-3">
+<p class="text-text-color dark:text-text-dark text-sm font-medium leading-normal">Apa saja jenis konten yang didukung?</p>
+<div class="text-primary group-open:rotate-180 transition-transform duration-300">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</summary>
+<p class="text-text-color/70 dark:text-text-dark/70 text-sm font-normal leading-normal pb-3 transition-all duration-300 ease-in-out">
+                Aplikasi kami mendukung berbagai jenis konten termasuk postingan blog, pembaruan media sosial, deskripsi produk, email pemasaran, dan banyak lagi.
+            </p>
+</details>
+<details class="flex flex-col rounded-lg bg-secondary/30 dark:bg-secondary/20 px-4 py-2 group shadow-md transition-all duration-300 ease-in-out">
+<summary class="flex cursor-pointer items-center justify-between gap-4 py-3">
+<p class="text-text-color dark:text-text-dark text-sm font-medium leading-normal">Bagaimana cara membatalkan langganan?</p>
+<div class="text-primary group-open:rotate-180 transition-transform duration-300">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</summary>
+<p class="text-text-color/70 dark:text-text-dark/70 text-sm font-normal leading-normal pb-3 transition-all duration-300 ease-in-out">
+                Anda dapat membatalkan langganan Anda kapan saja dari bagian 'Akun'. Navigasikan ke 'Langganan' dan ikuti instruksi pembatalan.
+            </p>
+</details>
+</div>
+<!-- Feedback Section -->
+<h2 class="text-text-color dark:text-text-dark text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-8">Tidak menemukan jawaban?</h2>
+<p class="text-text-color/80 dark:text-text-dark/80 text-sm font-normal leading-normal px-4 pb-4">Kirimkan pertanyaan atau umpan balik Anda kepada kami. Kami akan segera menghubungi Anda!</p>
+<div class="px-4 flex flex-col gap-4">
+<input class="form-input w-full rounded-lg h-14 bg-white dark:bg-gray-800 border-none shadow-md px-4 text-text-color dark:text-text-dark placeholder:text-gray-400 dark:placeholder:text-gray-500" placeholder="Subjek" type="text"/>
+<textarea class="form-textarea w-full rounded-lg h-32 bg-white dark:bg-gray-800 border-none shadow-md px-4 py-3 text-text-color dark:text-text-dark placeholder:text-gray-400 dark:placeholder:text-gray-500" placeholder="Pesan Anda..."></textarea>
+<button class="flex items-center justify-center w-full h-14 bg-primary text-white font-bold rounded-lg shadow-md hover:bg-primary/90 transition-colors">
+            Kirim Pesan
+        </button>
+</div>
+<!-- Bottom Navigation Bar -->
+<div class="fixed bottom-0 left-0 right-0 h-20 bg-background-light dark:bg-background-dark/80 backdrop-blur-sm border-t border-gray-200 dark:border-gray-700 flex justify-around items-center z-20">
+<a class="flex flex-col items-center gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs">Beranda</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">library_books</span>
+<span class="text-xs">Perpustakaan</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">calendar_today</span>
+<span class="text-xs">Jadwal</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">add_box</span>
+<span class="text-xs">Buat</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined">account_circle</span>
+<span class="text-xs font-bold">Akun</span>
+</a>
+</div>
+</div>
+</body></html>

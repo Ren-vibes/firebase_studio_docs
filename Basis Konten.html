@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Perpustakaan Konten</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#5AB9B6",
+            "secondary": "#A3D4C9",
+            "accent": "#F6B26B",
+            "background-light": "#FAFAFA",
+            "background-dark": "#1a1a1a",
+            "text-light": "#1E1E1E",
+            "text-dark": "#FAFAFA",
+            "text-secondary-light": "#555555",
+            "text-secondary-dark": "#bbbbbb",
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "1rem", 
+            "lg": "1.25rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+          boxShadow: {
+            '2dp': '0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -2px rgba(0, 0, 0, 0.1)',
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="sticky top-0 z-10 bg-gradient-to-b from-secondary/50 to-background-light/0 dark:from-secondary/20 dark:to-background-dark/0 pt-4">
+<div class="flex items-center p-4 pb-3 justify-between">
+<h1 class="text-text-light dark:text-text-dark text-2xl font-bold leading-tight tracking-[-0.015em] flex-1">Perpustakaan Konten</h1>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 w-12 bg-transparent text-text-light dark:text-text-dark gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+<span class="material-symbols-outlined text-2xl">search</span>
+</button>
+</div>
+</div>
+<main class="flex-grow px-4 pb-28 space-y-4">
+<div class="flex items-center gap-4 bg-white dark:bg-zinc-800 p-4 min-h-[88px] rounded-xl shadow-2dp">
+<div class="text-primary flex items-center justify-center rounded-lg bg-secondary/30 shrink-0 size-12">
+<span class="material-symbols-outlined text-3xl">description</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-text-light dark:text-text-dark text-base font-semibold leading-normal line-clamp-1">Artikel Blog tentang SEO</p>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal leading-normal line-clamp-2">Kumpulan draf dan ide artikel untuk optimasi mesin pencari.</p>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-white dark:bg-zinc-800 p-4 min-h-[88px] rounded-xl shadow-2dp">
+<div class="text-primary flex items-center justify-center rounded-lg bg-secondary/30 shrink-0 size-12">
+<span class="material-symbols-outlined text-3xl">language</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-text-light dark:text-text-dark text-base font-semibold leading-normal line-clamp-1">Website Produk Kue Kering</p>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal leading-normal line-clamp-2">Konten dari halaman 'Tentang Kami' dan 'Deskripsi Produk'.</p>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-white dark:bg-zinc-800 p-4 min-h-[88px] rounded-xl shadow-2dp">
+<div class="text-primary flex items-center justify-center rounded-lg bg-secondary/30 shrink-0 size-12">
+<span class="material-symbols-outlined text-3xl">chat_bubble</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-text-light dark:text-text-dark text-base font-semibold leading-normal line-clamp-1">Postingan Media Sosial Q4</p>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal leading-normal line-clamp-2">Rencana konten untuk Instagram dan Facebook periode Oktober-Desember.</p>
+</div>
+</div>
+<!-- Empty State Example -->
+<!-- <div class="flex flex-col items-center justify-center text-center pt-20 px-6">
+        <div class="text-primary/50 dark:text-primary/30">
+          <span class="material-symbols-outlined text-8xl">cloud_off</span>
+        </div>
+        <h2 class="text-text-light dark:text-text-dark text-xl font-bold mt-6">Perpustakaanmu Masih Kosong</h2>
+        <p class="text-text-secondary-light dark:text-text-secondary-dark text-base mt-2 max-w-sm">Tambahkan basis konten pertamamu untuk mulai membuat konten dengan bantuan AI.</p>
+        <button class="flex items-center justify-center rounded-full h-14 bg-primary text-white text-base font-bold mt-8 px-8 gap-2 shadow-lg shadow-primary/30">
+          <span class="material-symbols-outlined">add</span>
+          <span>Tambah Basis Konten</span>
+        </button>
+      </div> -->
+</main>
+<div class="fixed bottom-24 right-6 z-20">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-16 w-16 bg-primary text-white shadow-lg shadow-primary/40">
+<span class="material-symbols-outlined text-4xl">add</span>
+</button>
+</div>
+<footer class="fixed bottom-0 left-0 right-0 bg-white/80 dark:bg-zinc-800/80 backdrop-blur-sm border-t border-gray-200 dark:border-zinc-700">
+<div class="flex justify-around items-center h-20 px-4">
+<a class="flex flex-col items-center gap-1 text-text-secondary-light dark:text-text-secondary-dark" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs font-medium">Beranda</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined">auto_stories</span>
+<span class="text-xs font-bold">Perpustakaan</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-text-secondary-light dark:text-text-secondary-dark" href="#">
+<span class="material-symbols-outlined">calendar_month</span>
+<span class="text-xs font-medium">Jadwal</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-text-secondary-light dark:text-text-secondary-dark" href="#">
+<span class="material-symbols-outlined">add_circle</span>
+<span class="text-xs font-medium">Buat</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-text-secondary-light dark:text-text-secondary-dark" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-xs font-medium">Akun</span>
+</a>
+</div>
+</footer>
+</div>
+</body></html>
